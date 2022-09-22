@@ -34,8 +34,8 @@ interface NavListType {
 [];
 
 const NAV_LIST = [
-  { id: 1, name: "HOME", offset: "1" },
-  { id: 2, name: "ABOUT", offset: "2" },
+  { id: 1, name: "ABOUT", offset: "1" },
+  { id: 2, name: "SKILLS", offset: "2" },
   { id: 3, name: "EXPERIENCE", offset: "3" },
   { id: 4, name: "PROJECTS", offset: "4" },
 ];

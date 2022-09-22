@@ -11,7 +11,7 @@ export const Contacts = ({ setModal }) => {
     <div className="bg-black ">
       <FontAwesomeIcon
         icon={faArrowLeft}
-        className="text-white fixed m-10"
+        className="text-white fixed m-10 hover:cursor-pointer"
         size="2x"
         onClick={() => setModal(false)}
       />
