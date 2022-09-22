@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 import { FadeIn } from "ts-react-fade";
 
@@ -9,7 +10,7 @@ export const About = () => {
           <div className="flex justify-between">
             <div>
               <FadeIn delay={500}>
-                <div>
+                <div className="">
                   <p>FRONTEND</p>
                   <p>DEVELOPER</p>
                 </div>

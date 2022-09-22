@@ -1,7 +1,8 @@
 import { ProjectDetail } from "./Projects";
 import Image from "next/image";
+import { ClickType } from "./Projects";
 
-export const Project3 = ({ click, setClick }) => {
+export const Project3 = ({ click, setClick }: ClickType) => {
   return (
     <>
       <div className="flex flex-col">

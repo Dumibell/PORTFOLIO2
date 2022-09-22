@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 import { Contacts } from "./Contacts";
 
-export const Nav = ({ modal, setModal }) => {
+export const Nav = ({ setModal }: ModalType) => {
   return (
     <div className="h-20 w-screen fixed flex justify-between items-center z-10">
       {NAV_LIST.map((list) => {
@@ -26,6 +26,10 @@ export const Nav = ({ modal, setModal }) => {
   );
 };
 
+interface ModalType {
+  setModal: (x: boolean) => void;
+}
+
 interface NavListType {
   id: number;
   name: string;
@@ -36,6 +40,5 @@ interface NavListType {
 const NAV_LIST = [
   { id: 1, name: "ABOUT", offset: "1" },
   { id: 2, name: "SKILLS", offset: "2" },
-  { id: 3, name: "EXPERIENCE", offset: "3" },
-  { id: 4, name: "PROJECTS", offset: "4" },
+  { id: 3, name: "PROJECTS", offset: "3" },
 ];

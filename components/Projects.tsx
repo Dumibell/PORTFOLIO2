@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Projects = () => {
-  const [click, setClick] = useState(false);
-  const [number, setNumber] = useState(1);
+  const [click, setClick] = useState<boolean>(false);
+  const [number, setNumber] = useState<number>(1);
 
   const showProject = () => {
     if (number === 1) {
@@ -25,7 +25,7 @@ export const Projects = () => {
   return (
     <div
       className="w-screen h-screen flex flex-col items-center justify-center"
-      id="4"
+      id="3"
     >
       <div className="m-20">
         <div className="flex justify-end ">
@@ -81,6 +81,11 @@ interface ProjcetDetailType {
   text4: string;
   text5?: string;
   github: string;
+}
+
+export interface ClickType {
+  click: boolean;
+  setClick: (x: boolean) => void;
 }
 
 export const ProjectDetail = ({

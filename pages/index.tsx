@@ -8,7 +8,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 const Index: NextPage = () => {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState<boolean>(false);
 
   return (
     <div className="w-screen h-screen">
@@ -16,7 +16,7 @@ const Index: NextPage = () => {
         <Contacts setModal={setModal} />
       ) : (
         <>
-          <Nav modal={modal} setModal={setModal} />
+          <Nav setModal={setModal} />
           <Main />
         </>
       )}
