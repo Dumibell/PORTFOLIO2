@@ -8,14 +8,14 @@ export const Nav = ({ modal, setModal }) => {
       {NAV_LIST.map((list) => {
         return (
           <Link to={list.offset} spy={true} smooth={true} key={list.id}>
-            <button className="px-20 text-xl font-ligth font-Roboto">
+            <button className="px-20 text-xl font-ligth font-Roboto hover:translate-y-[-3px]">
               {list.name}
             </button>
           </Link>
         );
       })}
       <button
-        className="px-20 text-xl font-ligth font-Roboto"
+        className="px-20 text-xl font-ligth font-Roboto hover:font-bold hover:translate-y-[-3px]"
         onClick={() => {
           setModal(true);
         }}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ProjectDetail } from "./Projects";
 
 export const Project1 = ({ click, setClick }) => {
   return (
@@ -20,9 +21,21 @@ export const Project1 = ({ click, setClick }) => {
       </div>
       <div className="flex items-center">
         {click ? (
-          <ProjectDetail1 />
+          <ProjectDetail
+            title="마이리얼트립을 모티브로 진행한 팀 프로젝트"
+            period="2022.07.04 ~ 2022.07.15"
+            position="프론트엔드 4명, 백엔드 2명"
+            skills="HTML/CSS, Styled-Components, JavaScript, React.js, Ant-Design, Notion, Slack, Trello"
+            myJob="제품 검색 리스트"
+            text1="- styled-component를 활용한 UI/UX 구현"
+            text2="- 지역, 날짜, 인원수 선택 가능한 모달창 구현"
+            text3=" - 라이브러리를 이용한 캘린더, 슬라이더, 별점 기능구현"
+            text4=" - API와 query string을 활용해 고객이 선택한 조건에 따라 데이터가
+            재렌더링 되도록 구현"
+            github="https://github.com/Dumibell/34-2nd-Fake-Trip-frontend"
+          />
         ) : (
-          <div className="ml-12 w-[800px] h-[500px] border">
+          <div className="w-[800px] h-[500px] border">
             <Image
               src="/images/마이페이크트립_검색리스트.gif"
               width={800}
@@ -33,22 +46,5 @@ export const Project1 = ({ click, setClick }) => {
         )}
       </div>
     </>
-  );
-};
-
-const ProjectDetail1 = () => {
-  return (
-    <div className="ml-12 w-[800px] bg-black h-[500px] border text-white">
-      <div className="ml-6 mt-8">
-        <p className="my-2">⦁ 프로젝트 기간: 2022. 07.04 ~ 2022.07.15</p>
-        <p className="my-2">⦁ 팀 구성: 프론트엔드 4명, 백엔드 2명</p>
-        <p className="my-2">
-          ⦁ 사용 기술 및 라이브러리: HTML/CSS, styled-component, JavaScript,
-          React.js
-        </p>
-        <p className="my-2">⦁ 담당 구현 기능</p>
-        <div className=" border border-white w-[750px] h-[300px]"></div>
-      </div>
-    </div>
   );
 };
