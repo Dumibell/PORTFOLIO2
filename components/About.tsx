@@ -10,7 +10,7 @@ export const About = () => {
           <div className="flex justify-between">
             <div>
               <FadeIn delay={500}>
-                <div className="">
+                <div>
                   <p>FRONTEND</p>
                   <p>DEVELOPER</p>
                 </div>
