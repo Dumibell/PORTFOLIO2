@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React, { Component, useState } from "react";
-import Slider from "react-slick";
 import { isReadable } from "stream";
 import { Project1 } from "./Project1";
 import { Project2 } from "./Project2";

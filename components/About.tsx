@@ -1,4 +1,3 @@
-import React, { FC, PropsWithChildren } from "react";
 import Image from "next/image";
 import { FadeIn } from "ts-react-fade";
 
