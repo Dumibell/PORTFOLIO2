@@ -9,9 +9,11 @@ export const About = () => {
         <div className="text-7xl font-bold font-Roboto mt-32">
           <div className="flex justify-between">
             <div>
-              <FadeIn>
-                <p>FRONTEND</p>
-                <p>DEVELOPER</p>
+              <FadeIn delay={500}>
+                <div>
+                  <p>FRONTEND</p>
+                  <p>DEVELOPER</p>
+                </div>
               </FadeIn>
               <FadeIn delay={900}>
                 <div className="w-[450px] h-52 mt-3">
