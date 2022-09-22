@@ -34,7 +34,12 @@ export const Skills = () => {
   );
 };
 
-const Icons = ({ src, skill }) => {
+interface IconsType {
+  src: string;
+  skill: string;
+}
+
+const Icons = ({ src, skill }: IconsType) => {
   return (
     <div className="text-lg flex flex-col items-center">
       <div className="mx-6">

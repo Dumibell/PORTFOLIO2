@@ -24,4 +24,8 @@ const Index: NextPage = () => {
   );
 };
 
+export interface ModalType {
+  setModal: (x: boolean) => void;
+}
+
 export default Index;

@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import { ModalType } from "../pages";
 import { useState } from "react";
 import { Contacts } from "./Contacts";
 
@@ -25,10 +26,6 @@ export const Nav = ({ setModal }: ModalType) => {
     </div>
   );
 };
-
-interface ModalType {
-  setModal: (x: boolean) => void;
-}
 
 interface NavListType {
   id: number;

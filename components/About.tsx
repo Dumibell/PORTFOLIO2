@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC, PropsWithChildren } from "react";
 import Image from "next/image";
 import { FadeIn } from "ts-react-fade";
 
@@ -9,11 +9,9 @@ export const About = () => {
         <div className="text-7xl font-bold font-Roboto mt-32">
           <div className="flex justify-between">
             <div>
-              <FadeIn delay={500}>
-                <div>
-                  <p>FRONTEND</p>
-                  <p>DEVELOPER</p>
-                </div>
+              <FadeIn>
+                <p>FRONTEND</p>
+                <p>DEVELOPER</p>
               </FadeIn>
               <FadeIn delay={900}>
                 <div className="w-[450px] h-52 mt-3">

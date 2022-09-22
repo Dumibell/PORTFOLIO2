@@ -5,8 +5,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { ModalType } from "../pages";
 
-export const Contacts = ({ setModal }) => {
+export const Contacts = ({ setModal }: ModalType) => {
   return (
     <FadeIn delay={100}>
       <div className="bg-black">
