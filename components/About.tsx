@@ -4,26 +4,26 @@ import { FadeIn } from "ts-react-fade";
 export const About = () => {
   return (
     <div className="w-screen h-screen flex items-center" id="1">
-      <div className="w-full h-full m-16">
-        <div className="text-7xl font-bold font-Roboto mt-32">
-          <div className="flex justify-between">
+      <div className="w-full h-full m-16 flex justify-center items-center">
+        <div className="text-7xl font-bold font-Roboto mt-20 ">
+          <div className="flex w-screen justify-between">
             <div>
               <div className="fadeIn position">
                 <p>FRONTEND</p>
                 <p>DEVELOPER</p>
               </div>
 
-              <div className="w-[450px] h-52 mt-3 fadeIn image">
+              <div className=" mt-3 fadeIn image">
                 <Image
                   src="/images/home_img.jpeg"
-                  width={450}
-                  height={250}
+                  width={500}
+                  height={300}
                   alt="프로필이미지"
                 />
               </div>
             </div>
 
-            <div className="text-base font-light w-[500px] h-[300px] mt-[120px] flex flex-col justify-center items-end selfIntroduction">
+            <div className="text-base font-light w-[500px] h-[300px] mt-[130px] flex flex-col justify-center items-end selfIntroduction mr-40 min-w-[450px]">
               <p>개발자라는 직업을 선택한 이유는</p>
               <p>제가 잘할 수 있는 일이자 좋아하는 일이기 때문입니다.</p>
               <p className="mt-2">
@@ -44,7 +44,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-end mt-8">
+          <div className="flex flex-col items-end mr-40 min-w-[450px]">
             <div className="flex flex-col items-end name">
               <p>JENNY YEJEE</p>
               <p>CHO</p>

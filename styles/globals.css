@@ -9,6 +9,7 @@
 
 body {
   background-color: #e1dfdd;
+  overflow: hidden;
 }
 
 .position,

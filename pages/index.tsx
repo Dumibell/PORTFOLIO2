@@ -11,7 +11,7 @@ const Index: NextPage = () => {
   const [modal, setModal] = useState<boolean>(false);
 
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen ">
       {modal ? (
         <Contacts setModal={setModal} />
       ) : (
