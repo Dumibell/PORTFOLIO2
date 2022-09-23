@@ -38,9 +38,7 @@ export const Project1 = ({ click, setClick }: ClickType) => {
         ) : (
           <div className="w-[800px] h-[500px] border">
             <Image
-              src={
-                process.env.PUBLIC_URL + "/images/마이페이크트립_검색리스트.gif"
-              }
+              src="/images/마이페이크트립_검색리스트.gif"
               width={800}
               height={500}
               alt="시연영상"
