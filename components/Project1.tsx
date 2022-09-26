@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ProjectDetail } from "./Projects";
 import { ClickType } from "./Projects";
-import projectImage from "../public/images/마이페이크트립_검색리스트.gif";
 
 export const Project1 = ({ click, setClick }: ClickType) => {
   return (
@@ -38,7 +37,12 @@ export const Project1 = ({ click, setClick }: ClickType) => {
           />
         ) : (
           <div className="w-[800px] h-[500px] border">
-            <Image src={projectImage} width={200} height={100} alt="시연영상" />
+            <Image
+              src="/images/home_img.jpeg"
+              width={800}
+              height={500}
+              alt="시연영상"
+            />
           </div>
         )}
       </div>
