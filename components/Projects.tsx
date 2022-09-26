@@ -100,14 +100,14 @@ export const ProjectDetail = ({
   github,
 }: ProjcetDetailType) => {
   return (
-    <div className="w-[800px] h-[500px] border bg-black text-white font-Roboto">
-      <div className="ml-6 mt-8">
-        <p className="my-3 text-xl italic">{title}</p>
-        <p className="my-2"> 프로젝트 기간: {period}</p>
+    <div className="w-[800px] h-[450px] border bg-black text-white font-Roboto">
+      <div className="ml-6 mt-6">
+        <p className="my-3 text-xl italic"> {title}</p>
+        <p className="my-2">⦁ 프로젝트 기간: {period}</p>
         <p className="my-2">⦁ 팀 구성: {position}</p>
         <p className="my-2">⦁ 사용 기술 및 라이브러리: {skills}</p>
         <p className="my-2">⦁ 담당 구현 기능: {myJob}</p>
-        <div className=" border border-white w-[750px] h-[240px] mt-3">
+        <div className=" border border-white w-[750px] h-[200px] mt-2">
           <div className="m-4">
             <p className="my-2">{text1}</p>
             <p className="my-2">{text2}</p>

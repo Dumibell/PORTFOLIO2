@@ -6,8 +6,8 @@ import projectImage from "../public/images/제품상세.gif";
 export const Project2 = ({ click, setClick }: ClickType) => {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="text-7xl font-bold font-Roboto mt-28">
+      <div className="flex flex-col justify-center">
+        <div className="text-7xl font-bold font-Roboto">
           <p>WE</p>
           <p>SOP</p>
         </div>
@@ -36,8 +36,8 @@ export const Project2 = ({ click, setClick }: ClickType) => {
             github="https://github.com/Dumibell/34-1st-Wesop-frontend"
           />
         ) : (
-          <div className="w-[800px] h-[500px] border">
-            <Image src={projectImage} width={800} height={500} alt="시연영상" />
+          <div className="w-[800px] h-[450px] flex">
+            <video src="/videos/Wesop.mp4" autoPlay />
           </div>
         )}
       </div>

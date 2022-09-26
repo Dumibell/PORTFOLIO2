@@ -6,8 +6,8 @@ import projectImage from "../public/images/vetflux.gif";
 export const Project3 = ({ click, setClick }: ClickType) => {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="text-7xl font-bold font-Roboto mt-28">
+      <div className="flex flex-col justify-center">
+        <div className="text-7xl font-bold font-Roboto">
           <p>VET</p>
           <p>FLUX</p>
         </div>
@@ -35,9 +35,8 @@ export const Project3 = ({ click, setClick }: ClickType) => {
             github="https://github.com/Dumibell/reservation"
           />
         ) : (
-          <div className="w-[800px] h-[500px] border">
-            {/* <Image src={projectImage} width={800} height={500} alt="시연영상" /> */}
-            <video src="/images/벳플럭스.mov" autoPlay />
+          <div className="w-[800px] h-[450px] flex">
+            <video src="/videos/Vetflux.mov" autoPlay />
           </div>
         )}
       </div>

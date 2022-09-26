@@ -6,8 +6,8 @@ import ReactPlayer from "react-player";
 export const Project1 = ({ click, setClick }: ClickType) => {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="text-7xl font-bold font-Roboto mt-28">
+      <div className="flex flex-col justify-center">
+        <div className="text-7xl font-bold font-Roboto">
           <p>MY</p>
           <p>FAKE</p>
           <p>TRIP</p>
@@ -37,13 +37,8 @@ export const Project1 = ({ click, setClick }: ClickType) => {
             github="https://github.com/Dumibell/34-2nd-Fake-Trip-frontend"
           />
         ) : (
-          <div className="w-[800px] h-[500px] border">
-            <Image
-              src="/images/마이페이크트립_검색리스트.gif"
-              width={800}
-              height={500}
-              alt="시연영상"
-            />
+          <div className="w-[800px] h-[450px] flex">
+            <video src="/videos/myFakeTrip.mov" autoPlay />
           </div>
         )}
       </div>
