@@ -38,12 +38,7 @@ export const Project1 = ({ click, setClick }: ClickType) => {
           />
         ) : (
           <div className="w-[800px] h-[500px] border">
-            <Image
-              src={projectImage}
-              width={1760}
-              height={1100}
-              alt="시연영상"
-            />
+            <Image src={projectImage} width={200} height={100} alt="시연영상" />
           </div>
         )}
       </div>
