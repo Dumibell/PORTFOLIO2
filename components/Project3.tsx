@@ -36,7 +36,8 @@ export const Project3 = ({ click, setClick }: ClickType) => {
           />
         ) : (
           <div className="w-[800px] h-[500px] border">
-            <Image src={projectImage} width={800} height={500} alt="시연영상" />
+            {/* <Image src={projectImage} width={800} height={500} alt="시연영상" /> */}
+            <video src="/images/벳플럭스.mov" autoPlay />
           </div>
         )}
       </div>

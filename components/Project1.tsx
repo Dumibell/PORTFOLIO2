@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ProjectDetail } from "./Projects";
 import { ClickType } from "./Projects";
+import ReactPlayer from "react-player";
 
 export const Project1 = ({ click, setClick }: ClickType) => {
   return (
@@ -26,7 +27,7 @@ export const Project1 = ({ click, setClick }: ClickType) => {
             title="마이리얼트립을 모티브로 진행한 팀 프로젝트"
             period="2022.07.04 ~ 2022.07.15"
             position="프론트엔드 4명, 백엔드 2명"
-            skills="HTML/CSS, Styled-Components, JavaScript, React.js, Ant-Design, Notion, Slack, Trello"
+            skills="HTML/CSS, Styled-Components, JavaScript, React.js, Notion, Slack, Trello"
             myJob="제품 검색 리스트"
             text1="- styled-component를 활용한 UI/UX 구현"
             text2="- 지역, 날짜, 인원수 선택 가능한 모달창 구현"
@@ -38,7 +39,7 @@ export const Project1 = ({ click, setClick }: ClickType) => {
         ) : (
           <div className="w-[800px] h-[500px] border">
             <Image
-              src="/images/home_img.jpeg"
+              src="/images/마이페이크트립_검색리스트.gif"
               width={800}
               height={500}
               alt="시연영상"
