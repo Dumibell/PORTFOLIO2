@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ProjectDetail } from "./Projects";
 import { ClickType } from "./Projects";
 import ReactPlayer from "react-player";
+import { useMemo } from "react";
 
 export const Project1 = ({ click, setClick }: ClickType) => {
   return (
@@ -38,7 +39,7 @@ export const Project1 = ({ click, setClick }: ClickType) => {
           />
         ) : (
           <div className="w-[800px] h-[450px] flex">
-            <video src="/videos/myFakeTrip.mov" autoPlay />
+            <video src="/videos/myFakeTrip.mov" autoPlay loop />
           </div>
         )}
       </div>

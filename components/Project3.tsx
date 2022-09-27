@@ -36,7 +36,7 @@ export const Project3 = ({ click, setClick }: ClickType) => {
           />
         ) : (
           <div className="w-[800px] h-[450px] flex">
-            <video src="/videos/Vetflux.mov" autoPlay />
+            <video src="/videos/Vetflux.mov" autoPlay loop />
           </div>
         )}
       </div>
