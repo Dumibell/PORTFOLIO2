@@ -54,7 +54,7 @@ export const Contacts = ({ setModal }: ModalType) => {
                 <div className="hover:underline">
                   <FontAwesomeIcon icon={faGithub} className="text-white" />
                   <span className="ml-1">Github. </span>
-                  <a href="https://github.com/Dumibell">
+                  <a href="https://github.com/Dumibell" target="_blank">
                     https://github.com/Dumibell
                   </a>
                 </div>
@@ -63,7 +63,7 @@ export const Contacts = ({ setModal }: ModalType) => {
                 <div className="hover:underline">
                   <FontAwesomeIcon icon={faBlog} className="text-white" />
                   <span className="ml-1">Blog. </span>
-                  <a href="https://velog.io/@dumibell">
+                  <a href="https://velog.io/@dumibell" target="_blank">
                     https://velog.io/@dumibell
                   </a>
                 </div>
