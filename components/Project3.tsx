@@ -27,7 +27,7 @@ export const Project3 = ({ click, setClick }: ClickType) => {
             period="2022.08.01 ~ 2022.08.05 (인턴십 기간: 2022.07.18 ~ 2022.08.12)"
             position="프론트엔드 2명"
             skills="HTML/CSS, TypeScript, Next.js, TailwindCss, Zeplin, Notion, Slack"
-            myJob="반려동물 보호자와 동물병원을 연결시켜주는 플랫폼의 예약창 기획 및 개발"
+            myJob="자체 플랫폼인 '늘펫'의 예약 확인 화면 기획 및 개발"
             text1="- Day.js와 map함수를 이용한 일주일 단위의 캘린더 구현"
             text2="- 일주일치 예약건을 해당되는 날짜, 시간별 칸?에 표시"
             text3="- 상위 Component 관리를 통한 예약리스트와 캘린더 연결"
@@ -36,7 +36,7 @@ export const Project3 = ({ click, setClick }: ClickType) => {
           />
         ) : (
           <div className="w-[800px] h-[450px] flex">
-            <video src="/videos/Vetflux.mov" autoPlay loop />
+            <video src="/videos/Vetflux.mov" autoPlay loop muted />
           </div>
         )}
       </div>
