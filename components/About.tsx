@@ -4,7 +4,7 @@ import { FadeIn } from "ts-react-fade";
 export const About = () => {
   return (
     <div className="w-screen h-screen flex items-center" id="1">
-      <div className="w-full h-full m-16 flex justify-center items-center">
+      <div className="w-full h-full m-20 flex justify-center items-center">
         <div className="text-7xl font-bold font-Roboto mt-20 ">
           <div className="flex w-screen justify-between">
             <div>
@@ -44,7 +44,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-end mr-40 min-w-[450px]">
+          <div className="flex flex-col items-end mr-48 min-w-[450px]">
             <div className="flex flex-col items-end name">
               <p>JENNY YEJEE</p>
               <p>CHO</p>
