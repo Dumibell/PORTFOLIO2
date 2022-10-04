@@ -10,7 +10,7 @@ export const About = () => {
             <div>
               <div className="fadeIn position">
                 <p>FRONTEND</p>
-                <p>DEVELOPER </p>
+                <p>DEVELOPER</p>
               </div>
 
               <div className=" mt-3 fadeIn image">
