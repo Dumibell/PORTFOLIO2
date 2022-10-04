@@ -5,7 +5,7 @@ export const Skills = () => {
     <div className="h-screen w-screen flex flex-col justify-center" id="2">
       <div className="m-20 flex flex-col items-center font-Roboto text-3xl">
         <div className=" flex flex-col items-center mb-8">
-          <p className="underline decoration-2 mb-2">Business Tools</p>
+          <p className="underline decoration-2 mb-2">Business Tools 깃 커밋</p>
           <div className="mt-3 flex">
             {/* <Icons src="/images/github.svg" skill="Github" />
             <Icons src="/images/notion.svg" skill="Notion" />
