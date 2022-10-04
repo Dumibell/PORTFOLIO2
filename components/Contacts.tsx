@@ -46,27 +46,27 @@ export const Contacts = ({ setModal }: ModalType) => {
 
             <div className="text-lg mt-3">
               <ContactLists
-                nameOfClass="text5"
+                nameOfClass="text3"
                 icon={faPhone}
                 title="Phone."
                 contactlist="010-5120-6319"
               />
               <ContactLists
-                nameOfClass="text6"
+                nameOfClass="text4"
                 icon={faEnvelope}
                 title="Mail."
                 href="mailto:choyejee14@gmail.com"
                 contactlist="choyejee14@gmail.com"
               />
               <ContactLists
-                nameOfClass="text7"
+                nameOfClass="text5"
                 icon={faGithub}
                 title="Github."
                 href="https://github.com/Dumibell"
                 contactlist="https://github.com/Dumibell"
               />
               <ContactLists
-                nameOfClass="text8"
+                nameOfClass="text6"
                 icon={faBlog}
                 title="Blog."
                 href="https://velog.io/@dumibell"

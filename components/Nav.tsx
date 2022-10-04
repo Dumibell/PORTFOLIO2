@@ -36,4 +36,5 @@ const NAV_LIST = [
   { id: 1, name: "ABOUT", offset: "1" },
   { id: 2, name: "SKILLS", offset: "2" },
   { id: 3, name: "PROJECTS", offset: "3" },
+  { id: 3, name: "INTERNSHIP", offset: "4" },
 ];
