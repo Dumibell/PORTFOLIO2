@@ -4,7 +4,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { ModalType } from "../pages";
+import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
 export const Contacts = ({ setModal }: ModalType) => {
   return (
@@ -43,34 +45,64 @@ export const Contacts = ({ setModal }: ModalType) => {
             </a>
 
             <div className="text-lg mt-3">
-              <div className="text6">
-                <div className="hover:underline">
-                  <FontAwesomeIcon icon={faEnvelope} className="text-white" />
-                  <span className="ml-1">Mail. </span>
-                  <a href="mailto:choyejee14@gmail.com">choyejee14@gmail.com</a>
-                </div>
-              </div>
-              <div className="text7">
-                <div className="hover:underline">
-                  <FontAwesomeIcon icon={faGithub} className="text-white" />
-                  <span className="ml-1">Github. </span>
-                  <a href="https://github.com/Dumibell" target="_blank">
-                    https://github.com/Dumibell
-                  </a>
-                </div>
-              </div>
-              <div className="text8">
-                <div className="hover:underline">
-                  <FontAwesomeIcon icon={faBlog} className="text-white" />
-                  <span className="ml-1">Blog. </span>
-                  <a href="https://velog.io/@dumibell" target="_blank">
-                    https://velog.io/@dumibell
-                  </a>
-                </div>
-              </div>
+              <ContactLists
+                nameOfClass="text3"
+                icon={faPhone}
+                title="Phone."
+                contactlist="010-5120-6319"
+              />
+              <ContactLists
+                nameOfClass="text4"
+                icon={faEnvelope}
+                title="Mail."
+                href="mailto:choyejee14@gmail.com"
+                contactlist="choyejee14@gmail.com"
+              />
+              <ContactLists
+                nameOfClass="text5"
+                icon={faGithub}
+                title="Github."
+                href="https://github.com/Dumibell"
+                contactlist="https://github.com/Dumibell"
+              />
+              <ContactLists
+                nameOfClass="text6"
+                icon={faBlog}
+                title="Blog."
+                href="https://velog.io/@dumibell"
+                contactlist="https://velog.io/@dumibell"
+              />
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+interface ContactListsType {
+  nameOfClass: string;
+  icon: IconDefinition;
+  title: string;
+  href?: string;
+  contactlist: string;
+}
+
+const ContactLists = ({
+  nameOfClass,
+  icon,
+  title,
+  href,
+  contactlist,
+}: ContactListsType) => {
+  return (
+    <div className={nameOfClass}>
+      <div className="hover:underline">
+        <FontAwesomeIcon icon={icon} className="text-white" />
+        <span className="ml-1">{title} </span>
+        <a href={href} target="_blank">
+          {contactlist}
+        </a>
       </div>
     </div>
   );

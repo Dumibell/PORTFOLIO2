@@ -28,14 +28,14 @@ body {
   -o-animation: fadein2 1.5s; /* Opera */
 }
 
-.image {
+.name {
   animation: fadein3 1.8s;
   -moz-animation: fadein3 1.8s; /* Firefox */
   -webkit-animation: fadein3 1.8s; /* Safari and Chrome */
   -o-animation: fadein3 1.8s; /* Opera */
 }
 
-.name {
+.image {
   animation: fadein4 2s;
   -moz-animation: fadein4 2s; /* Firefox */
   -webkit-animation: fadein4 2s; /* Safari and Chrome */

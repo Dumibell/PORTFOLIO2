@@ -2,12 +2,13 @@ import React, { Component, useMemo, useState } from "react";
 import { isReadable } from "stream";
 import { Project1 } from "./Project1";
 import { Project2 } from "./Project2";
-import { Project3 } from "./Project3";
+import { ToyProject } from "./ToyProject";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBlog } from "@fortawesome/free-solid-svg-icons";
+import { ClickType } from "./Main";
 
-export const Projects = () => {
-  const [click, setClick] = useState<boolean>(false);
+export const Projects = ({ click, setClick }: ClickType) => {
   const [number, setNumber] = useState<number>(1);
 
   const showProject = () => {
@@ -16,7 +17,7 @@ export const Projects = () => {
     } else if (number === 2) {
       return <Project2 click={click} setClick={setClick} />;
     } else {
-      return <Project3 click={click} setClick={setClick} />;
+      return <ToyProject click={click} setClick={setClick} />;
     }
   };
 
@@ -64,13 +65,14 @@ export const Projects = () => {
 const PROJECT_NUMBER = [
   { id: 1, name: "Projcet1" },
   { id: 2, name: "Projcet2" },
-  { id: 3, name: "Internship" },
+  { id: 3, name: "ToyProject" },
 ];
 
 interface ProjcetDetailType {
   title: string;
+  internshipPeriod?: string;
   period: string;
-  position: string;
+  member: string;
   skills: string;
   myJob: string;
   text1: string;
@@ -78,18 +80,16 @@ interface ProjcetDetailType {
   text3: string;
   text4: string;
   text5?: string;
+  retrospection: string;
   github: string;
-}
-
-export interface ClickType {
-  click: boolean;
-  setClick: (x: boolean) => void;
+  blog: string;
 }
 
 export const ProjectDetail = ({
   title,
+  internshipPeriod,
   period,
-  position,
+  member,
   skills,
   myJob,
   text1,
@@ -97,30 +97,47 @@ export const ProjectDetail = ({
   text3,
   text4,
   text5,
+  retrospection,
   github,
+  blog,
 }: ProjcetDetailType) => {
   return (
-    <div className="w-[800px] h-[450px] border bg-black text-white font-Roboto">
+    <div className="w-[800px] h-[460px] border bg-black text-white font-Roboto">
       <div className="ml-6 mt-6">
-        <p className="my-3 text-xl italic"> {title}</p>
-        <p className="my-2">⦁ 프로젝트 기간: {period}</p>
-        <p className="my-2">⦁ 팀 구성: {position}</p>
-        <p className="my-2">⦁ 사용 기술 및 라이브러리: {skills}</p>
-        <p className="my-2">⦁ 담당 구현 기능: {myJob}</p>
-        <div className=" border border-white w-[750px] h-[200px] mt-2">
-          <div className="m-4">
-            <p className="my-2">{text1}</p>
-            <p className="my-2">{text2}</p>
-            <p className="my-2">{text3}</p>
-            <p className="my-2">{text4}</p>
-            <p className="my-2">{text5}</p>
+        <p className="my-3 text-xl italic">💡 {title}</p>
+        <div className="border border-white w-[750px] h-[350px]">
+          <div className="m-2">
+            <p className="my-1">{internshipPeriod}</p>
+            <p className="my-1">▫️ 프로젝트 기간: {period}</p>
+            <p className="my-1">▫️ 팀 구성: {member}</p>
+            <p className="my-1">▫️ 사용 기술 및 라이브러리: {skills}</p>
+            <p className="my-1">▫️ 담당 구현 기능: {myJob}</p>
+            <div className="ml-3">
+              <p className="my-1">{text1}</p>
+              <p className="my-1">{text2}</p>
+              <p className="my-1">{text3}</p>
+              <p className="my-1">{text4}</p>
+              <p className="my-1">{text5}</p>
+            </div>
+            <p className="mt-2">✨ 성장한 부분</p>
+            <div className="ml-5 mr-2">
+              <p>{retrospection}</p>
+            </div>
           </div>
         </div>
-        <div className="mt-4 hover:translate-y-[-1px] hover:font-bold">
-          <a href={github}>
-            <FontAwesomeIcon icon={faGithub} />
-            <span> Github Repository</span>
-          </a>
+        <div className="mt-2 flex">
+          <div className="hover:translate-y-[-1px] hover:font-bold">
+            <a href={github} target="_blank">
+              <FontAwesomeIcon icon={faGithub} />
+              <span> Github Repository</span>
+            </a>
+          </div>
+          <div className="hover:translate-y-[-1px] hover:font-bold ml-3">
+            <a href={blog} target="_blank">
+              <FontAwesomeIcon icon={faBlog} />
+              <span> Blog Link</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
