@@ -23,9 +23,6 @@ export const ToyProject = ({ click, setClick }: ClickType) => {
       </div>
       <div className="flex items-center">
         {click ? (
-          // <div className="w-[800px] h-[450px] border bg-black text-white font-Roboto">
-          //   <div className="ml-6 mt-6"></div>
-          // </div>
           <ProjectDetail
             title="바닐라 자바스크립트로 구현한 자기소개 페이지"
             period="2022.04.18 ~ 2022.04.22"
