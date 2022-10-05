@@ -15,7 +15,7 @@ export const About = () => {
 
               <div className=" mt-3 fadeIn image">
                 <Image
-                  src="/images/home_img.jpeg"
+                  src="/images/profile_img.jpeg"
                   width={500}
                   height={300}
                   alt="프로필이미지"
