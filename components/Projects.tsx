@@ -7,17 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBlog } from "@fortawesome/free-solid-svg-icons";
 import { ClickType } from "./Main";
+import { useEffect } from "react";
 
-export const Projects = ({ click, setClick }: ClickType) => {
+export const Projects = () => {
   const [number, setNumber] = useState<number>(1);
 
   const showProject = () => {
     if (number === 1) {
-      return <Project1 click={click} setClick={setClick} />;
+      return <Project1 />;
     } else if (number === 2) {
-      return <Project2 click={click} setClick={setClick} />;
+      return <Project2 />;
     } else {
-      return <ToyProject click={click} setClick={setClick} />;
+      return <ToyProject />;
     }
   };
 
@@ -102,9 +103,9 @@ export const ProjectDetail = ({
   blog,
 }: ProjcetDetailType) => {
   return (
-    <div className="w-[800px] h-[460px] border bg-black text-white font-Roboto">
-      <div className="ml-6 mt-6">
-        <p className="my-3 text-xl italic">💡 {title}</p>
+    <div className="w-[800px] h-[460px] border bg-black text-white font-Roboto flex">
+      <div className="ml-6 mt-3">
+        <p className="my-3 text-xl">{title}</p>
         <div className="border border-white w-[750px] h-[350px]">
           <div className="m-2">
             <p className="my-1">{internshipPeriod}</p>

@@ -73,7 +73,7 @@ const Icons = ({ src, skill, text }: IconsType) => {
   return (
     <div className="text-xl flex items-center justify-center my-1">
       <div className="mx-1">
-        <Image src={src} alt="그림" width={17} height={17} />
+        <Image src={src} alt="그림" width={15} height={15} />
       </div>
       <p>{skill}</p>
       <p className="ml-1 text-sm">{text}</p>

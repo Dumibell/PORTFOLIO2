@@ -2,8 +2,10 @@ import { ProjectDetail } from "./Projects";
 import Image from "next/image";
 import { ClickType } from "./Main";
 import projectImage from "../public/images/vetflux.gif";
+import { useEffect, useState } from "react";
 
-export const ToyProject = ({ click, setClick }: ClickType) => {
+export const ToyProject = () => {
+  const [click, setClick] = useState(false);
   return (
     <>
       <div className="flex flex-col justify-center">
@@ -24,7 +26,7 @@ export const ToyProject = ({ click, setClick }: ClickType) => {
       <div className="flex items-center">
         {click ? (
           <ProjectDetail
-            title="바닐라 자바스크립트로 구현한 자기소개 페이지"
+            title="🌱 바닐라 자바스크립트로 구현한 자기소개 페이지"
             period="2022.04.18 ~ 2022.04.22"
             member="프론트엔드 1명"
             skills="HTML/CSS, JavaScript"

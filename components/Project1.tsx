@@ -2,9 +2,10 @@ import Image from "next/image";
 import { ProjectDetail } from "./Projects";
 import { ClickType } from "./Main";
 import ReactPlayer from "react-player";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
-export const Project1 = ({ click, setClick }: ClickType) => {
+export const Project1 = () => {
+  const [click, setClick] = useState(false);
   return (
     <>
       <div className="flex flex-col justify-center">
@@ -25,7 +26,7 @@ export const Project1 = ({ click, setClick }: ClickType) => {
       <div className="flex items-center">
         {click ? (
           <ProjectDetail
-            title="my real trip 웹사이트를 모티브로 진행한 팀 프로젝트"
+            title="🌱 my real trip 웹사이트를 모티브로 진행한 팀 프로젝트"
             period="2022.07.04 ~ 2022.07.15"
             member="프론트엔드 4명, 백엔드 2명"
             skills="HTML/CSS, Styled-Components, JavaScript, React.js, Notion, Slack, Trello"

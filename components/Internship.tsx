@@ -1,7 +1,9 @@
 import { ClickType } from "./Main";
 import { ProjectDetail } from "./Projects";
+import { useEffect, useState } from "react";
 
-export const Internship = ({ click, setClick }: ClickType) => {
+export const Internship = () => {
+  const [click, setClick] = useState(false);
   return (
     <div
       className="w-screen h-screen flex flex-col items-center justify-center"
@@ -68,7 +70,7 @@ export const Internship = ({ click, setClick }: ClickType) => {
               //   </div>
               // </div>
               <ProjectDetail
-                title="벳플럭스"
+                title="🏢 벳플럭스"
                 internshipPeriod="▫️ 인턴십 기간: 2022.07.18 ~ 2022.08.12"
                 period="2022.08.01 ~ 2022.08.05"
                 member="프론트엔드 2명"

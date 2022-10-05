@@ -2,8 +2,10 @@ import Image from "next/image";
 import { ProjectDetail } from "./Projects";
 import { ClickType } from "./Main";
 import projectImage from "../public/images/제품상세.gif";
+import { useEffect, useState } from "react";
 
-export const Project2 = ({ click, setClick }: ClickType) => {
+export const Project2 = () => {
+  const [click, setClick] = useState(false);
   return (
     <>
       <div className="flex flex-col justify-center">
@@ -23,7 +25,7 @@ export const Project2 = ({ click, setClick }: ClickType) => {
       <div className="flex items-center">
         {click ? (
           <ProjectDetail
-            title="Aesop 웹사이트를 모티브로 진행한 팀 프로젝트"
+            title="🌱 Aesop 웹사이트를 모티브로 진행한 팀 프로젝트"
             period="2022.06.20 ~ 2022.07.01"
             member="프론트엔드 4명, 백엔드 1명"
             skills="HTML/CSS, Sass, JavaScript, React.js, Notion, Slack, Trello"
@@ -38,7 +40,7 @@ export const Project2 = ({ click, setClick }: ClickType) => {
             blog="https://velog.io/@dumibell/1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Wesop%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80"
           />
         ) : (
-          <div className="w-[800px] h-[460px] flex">
+          <div className="w-[800px] h-[460px] flex justify-center">
             <video src="/videos/wesop.mp4" autoPlay loop muted />
           </div>
         )}
