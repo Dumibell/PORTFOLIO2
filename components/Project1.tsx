@@ -35,7 +35,7 @@ export const Project1 = () => {
             text6="- 책 제목 또는 내용으로 게시물을 검색할 수 있습니다."
             text7="- 작성한 글의 개수에 따라 인증배지가 주어집니다."
             web="https://dumibell.github.io/reading-project/?#/"
-            github="https://github.com/Dumibell/34-2nd-Fake-Trip-frontend"
+            github="https://github.com/Dumibell/reading-project"
           />
         ) : (
           <div className="w-[830px] h-[460px] flex">
