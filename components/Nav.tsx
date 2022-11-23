@@ -3,24 +3,28 @@ import { ModalType } from "../pages";
 
 export const Nav = ({ setModal }: ModalType) => {
   return (
-    <div className="h-20 w-screen fixed flex justify-between items-center z-10">
+    <div className="h-20 w-screen fixed flex justify-between items-center z-10 px-10">
       {NAV_LIST.map((list) => {
         return (
-          <Link to={list.offset} spy={true} smooth={true} key={list.id}>
-            <button className="px-20 text-xl font-ligth font-Roboto hover:translate-y-[-3px]">
-              {list.name}
-            </button>
-          </Link>
+          <div className="px-5">
+            <Link to={list.offset} spy={true} smooth={true} key={list.id}>
+              <button className="text-xl font-ligth font-Roboto hover:translate-y-[-3px]">
+                {list.name}
+              </button>
+            </Link>
+          </div>
         );
       })}
-      <button
-        className="px-20 text-xl font-ligth font-Roboto hover:font-bold hover:translate-y-[-3px]"
-        onClick={() => {
-          setModal(true);
-        }}
-      >
-        CONTACTS
-      </button>
+      <div className="px-3">
+        <button
+          className="text-xl font-ligth font-Roboto hover:font-bold hover:translate-y-[-3px]"
+          onClick={() => {
+            setModal(true);
+          }}
+        >
+          CONTACTS
+        </button>
+      </div>
     </div>
   );
 };

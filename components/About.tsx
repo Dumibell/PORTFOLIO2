@@ -48,7 +48,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-end mr-48 min-w-[450px]">
+          <div className="flex flex-col items-end mr-40 min-w-[450px]">
             <div className="flex flex-col items-end name">
               <p>JENNY YEJEE</p>
               <p>CHO</p>
