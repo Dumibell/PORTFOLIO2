@@ -157,3 +157,10 @@ body {
     transform: translateY(0px);
   }
 }
+
+@media (max-width: 800px) {
+  #1 {
+    width: 100vw;
+    height: 100vh;
+  }
+}

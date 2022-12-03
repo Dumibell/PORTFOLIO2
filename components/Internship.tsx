@@ -17,12 +17,12 @@ export const Internship = () => {
               <p>FLUX</p>
             </div>
             <div
-              className="border-b border-black w-20 hover:cursor-pointer"
+              className="border-b border-black w-24 hover:cursor-pointer"
               onClick={() => {
                 setClick(!click);
               }}
             >
-              {click ? "Go Back" : "See More"}
+              {click ? "← Go Back" : "→ See More"}
             </div>
           </div>
           <div className="flex items-center">

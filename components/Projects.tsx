@@ -118,7 +118,7 @@ export const ProjectDetail = ({
   return (
     <div className="w-[800px] h-[440px] border bg-black text-white font-Roboto flex">
       <div className="ml-6 mt-3">
-        <p className="my-3 text-xl">{title}</p>
+        <p className="my-3 text-xl ">{title}</p>
         <div className="border border-white w-[750px] h-[330px]">
           <div className="m-2">
             <p className="my-1">{internshipPeriod}</p>
