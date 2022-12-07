@@ -162,17 +162,20 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .aboutContainer {
     margin-left: 20px;
   }
+
   .mobile {
     display: flex;
     flex-direction: column;
+    width: 450px;
   }
   .selfIntroduction {
     margin-top: 10px;
     font-size: 13px;
+    margin-right: 0;
   }
   .selfIntroduction .mt-2 {
     margin-top: 0;
@@ -187,7 +190,6 @@ body {
   }
   .name {
     margin-top: 15px;
-    margin-right: 60px;
   }
 
   .nav {
@@ -203,7 +205,20 @@ body {
 
   .project {
     margin-left: 30px;
-    width: 500px;
+    margin-bottom: 0;
+    width: 400px;
+  }
+
+  .projectTitle {
+    font-size: 40px;
+  }
+
+  .browserDisplay {
+    display: none;
+  }
+
+  .seeMore {
+    font-size: 15px;
   }
 
   .positionTitle {

@@ -12,12 +12,12 @@ export const Internship = () => {
       <div className="m-20">
         <div className="flex w-[1000px] justify-between project">
           <div className="flex flex-col justify-center">
-            <div className="text-7xl font-bold font-Roboto">
+            <div className="text-7xl font-bold font-Roboto projectTitle">
               <p>VET</p>
               <p>FLUX</p>
             </div>
             <div
-              className="border-b border-black w-24 hover:cursor-pointer"
+              className="border-b border-black w-24 hover:cursor-pointer seeMore"
               onClick={() => {
                 setClick(!click);
               }}

@@ -6,12 +6,12 @@ export const Project1 = () => {
   return (
     <>
       <div className="flex flex-col justify-center">
-        <div className="text-7xl font-bold font-Roboto">
+        <div className="text-7xl font-bold font-Roboto projectTitle">
           <p>RE:</p>
           <p>BIT</p>
         </div>
         <div
-          className="border-b border-black w-24 hover:cursor-pointer"
+          className="border-b border-black w-24 hover:cursor-pointer seeMore"
           onClick={() => {
             setClick(!click);
           }}

@@ -9,13 +9,13 @@ export const Project2 = () => {
   return (
     <>
       <div className="flex flex-col justify-center">
-        <div className="text-6xl font-bold font-Roboto">
+        <div className="text-6xl font-bold font-Roboto projectTitle">
           <p>MY</p>
           <p>FAKE</p>
           <p>TRIP</p>
         </div>
         <div
-          className="border-b border-black w-24 hover:cursor-pointer"
+          className="border-b border-black w-24 hover:cursor-pointer seeMore"
           onClick={() => {
             setClick(!click);
           }}
