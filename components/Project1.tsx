@@ -38,7 +38,7 @@ export const Project1 = () => {
             github="https://github.com/Dumibell/reading-project"
           />
         ) : (
-          <div className="w-[830px] h-[460px] flex">
+          <div className="w-[830px] h-[460px] flex video">
             <video src="/videos/reading.mp4" autoPlay loop muted />
           </div>
         )}

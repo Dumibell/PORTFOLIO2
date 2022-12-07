@@ -4,7 +4,7 @@ import { FadeIn } from "ts-react-fade";
 export const About = () => {
   return (
     <div className="w-full h-screen flex items-center" id="1">
-      <div className="flex justify-center items-center pt-20 m-20">
+      <div className="flex justify-center items-center pt-20 m-20 aboutContainer">
         <div className="text-7xl font-bold font-Roboto">
           <div className="flex w-screen justify-between mobile">
             <div>

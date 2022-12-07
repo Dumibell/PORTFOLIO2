@@ -39,7 +39,7 @@ export const Project2 = () => {
             blog="https://velog.io/@dumibell/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-myfaketrip"
           />
         ) : (
-          <div className="w-[830px] h-[460px] flex">
+          <div className="w-[830px] h-[460px] flex video">
             <video
               src="/videos/마이페이크트립_검색리스트.mov"
               autoPlay

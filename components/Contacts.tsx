@@ -22,9 +22,9 @@ export const Contacts = ({ setModal }: ModalType) => {
           <div className="font-Roboto">
             <a
               href="mailto:choyejee14@gmail.com"
-              className="text-7xl font-bold "
+              className="text-7xl font-bold contactName"
             >
-              <div className="flex">
+              <div className="flex ">
                 <div className="text1">J</div>
                 <div className="text2">E</div>
                 <div className="text3">N</div>

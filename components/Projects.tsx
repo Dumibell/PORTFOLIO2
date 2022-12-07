@@ -61,7 +61,9 @@ export const Projects = () => {
             }
           })}
         </div>
-        <div className="flex w-[1000px] justify-between">{showProject()}</div>
+        <div className="flex w-[1000px] justify-between project">
+          {showProject()}
+        </div>
       </div>
     </div>
   );

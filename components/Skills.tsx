@@ -105,7 +105,7 @@ import Image from "next/image";
 export const Skills = () => {
   return (
     <div className="flex justify-center w-full h-screen" id="2">
-      <div className="flex flex-col justify-center px-10">
+      <div className="flex flex-col justify-center px-10 skillContainer">
         <Container
           position="Database |"
           skills="Firebase"
@@ -151,12 +151,12 @@ const Container = ({
   return (
     <div className="my-4">
       <p>
-        <span className="text-[#312315] text-2xl font-semibold">
+        <span className="text-[#312315] text-2xl font-semibold positionTitle">
           {position}
         </span>
-        <span className="ml-2 text-lg font-medium">{skills}</span>
+        <span className="ml-2 text-lg font-medium skill">{skills}</span>
       </p>
-      <div className="mt-1">
+      <div className="mt-1 skillDescription">
         <p>{text1}</p>
         <p>{text2}</p>
         <p>{text3}</p>

@@ -8,7 +8,7 @@ export const Project3 = () => {
   const [click, setClick] = useState(false);
   return (
     <>
-      <div className="flex flex-col justify-center overflow-x-scroll">
+      <div className="flex flex-col justify-center">
         <div className="text-7xl font-bold font-Roboto">
           <p>WE</p>
           <p>SOP</p>
@@ -39,7 +39,7 @@ export const Project3 = () => {
             blog="https://velog.io/@dumibell/1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Wesop%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80"
           />
         ) : (
-          <div className="w-[800px] h-[450px] flex justify-center">
+          <div className="w-[800px] h-[450px] flex justify-center video">
             <video src="/videos/wesop.mp4" autoPlay loop muted />
           </div>
         )}

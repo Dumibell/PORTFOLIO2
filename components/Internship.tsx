@@ -10,7 +10,7 @@ export const Internship = () => {
       id="4"
     >
       <div className="m-20">
-        <div className="flex w-[1000px] justify-between">
+        <div className="flex w-[1000px] justify-between project">
           <div className="flex flex-col justify-center">
             <div className="text-7xl font-bold font-Roboto">
               <p>VET</p>
@@ -80,12 +80,11 @@ export const Internship = () => {
                 text2="- 상위 Component 관리를 통한 예약리스트와 캘린더 연결"
                 text3="- 받아온 데이터 해당되는 날짜, 시간 칸에 표시"
                 text4="- 날짜 클릭시 클릭된 날짜의 예약건 예약리스트에 표시"
-                retrospection="기업에서 많이 사용하는 Next.js, TypeScript, TailwindCss를 사용해 볼 수 있었고, 업무 분담을 통해 실제 IT 회사에서의 개발 방식을 경험해볼 수 있었습니다."
                 github="https://github.com/Dumibell/reservation"
                 blog="https://velog.io/@dumibell/%EA%B8%B0%EC%97%85%ED%98%91%EC%97%85-23%EC%A3%BC%EC%B0%A8-query-%EA%B3%B5%EB%B6%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%9C%EC%9E%91"
               />
             ) : (
-              <div className="w-[800px] h-[450px] flex">
+              <div className="w-[800px] h-[450px] flex video">
                 <video src="/videos/vetflux.mov" autoPlay loop muted />
               </div>
             )}
