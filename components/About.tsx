@@ -5,10 +5,10 @@ export const About = () => {
   return (
     <div className="w-full h-full flex items-center ddd" id="1">
       <div className="w-full h-full m-20 flex justify-center items-center">
-        <div className="text-7xl font-bold font-Roboto mt-20 ">
+        <div className="text-7xl font-bold font-Roboto">
           <div className="flex w-screen justify-between mobile">
             <div>
-              <div className="fadeIn position">
+              <div className="fadeIn position largeTitle">
                 <p>FRONTEND</p>
                 <p>DEVELOPER</p>
               </div>
@@ -49,7 +49,7 @@ export const About = () => {
           </div>
 
           <div className="flex flex-col items-end mr-40 min-w-[450px]">
-            <div className="flex flex-col items-end name">
+            <div className="flex flex-col items-end largeTitle name">
               <p>JENNY YEJEE</p>
               <p>CHO</p>
             </div>

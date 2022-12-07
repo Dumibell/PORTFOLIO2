@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export const Main = () => {
   return (
-    <div className="h-screen">
+    <div className="w-full h-full">
       <About />
       <Skills />
       <Projects />

@@ -8,6 +8,7 @@
 @tailwind utilities;
 
 body {
+  box-sizing: content-box;
   background-color: #e1dfdd;
 }
 
@@ -154,5 +155,25 @@ body {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 700px) {
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .selfIntroduction {
+    margin-top: 10px;
+  }
+  .largeTitle {
+    font-size: 60px;
+  }
+  .name {
+    margin-top: 15px;
+  }
+
+  .navItem {
+    padding: 0 10px 0 10px;
   }
 }

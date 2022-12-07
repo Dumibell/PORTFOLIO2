@@ -3,10 +3,10 @@ import { ModalType } from "../pages";
 
 export const Nav = ({ setModal }: ModalType) => {
   return (
-    <div className="h-20 w-screen fixed flex justify-between items-center z-10 px-10 bg-[#e1dfdd]">
+    <div className="h-20 w-screen fixed flex justify-between items-center z-10 px-10 bg-[#e1dfdd] nav">
       {NAV_LIST.map((list) => {
         return (
-          <div className="px-5">
+          <div className="px-5 navItem">
             <Link to={list.offset} spy={true} smooth={true} key={list.id}>
               <button className="text-xl font-ligth font-Roboto hover:translate-y-[-3px]">
                 {list.name}
