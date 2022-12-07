@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export const Main = () => {
   return (
-    <div className="flex flex-col justify-center w-screen">
+    <div className="h-screen">
       <About />
       <Skills />
       <Projects />

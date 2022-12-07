@@ -3,10 +3,10 @@ import { FadeIn } from "ts-react-fade";
 
 export const About = () => {
   return (
-    <div className="w-screen h-screen flex items-center" id="1">
+    <div className="w-full h-full flex items-center ddd" id="1">
       <div className="w-full h-full m-20 flex justify-center items-center">
         <div className="text-7xl font-bold font-Roboto mt-20 ">
-          <div className="flex w-screen justify-between">
+          <div className="flex w-screen justify-between mobile">
             <div>
               <div className="fadeIn position">
                 <p>FRONTEND</p>
@@ -23,7 +23,7 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="text-base font-light w-[500px] h-[300px] mt-[130px] flex flex-col justify-center items-end selfIntroduction mr-40 min-w-[450px]">
+            <div className="text-base font-light mt-[130px] flex flex-col justify-center items-end selfIntroduction mr-40 min-w-[450px]">
               <p>개발자라는 직업을 선택한 이유는</p>
               <p>제가 잘할 수 있는 일이자 좋아하는 일이기 때문입니다.</p>
               <p className="mt-2">

@@ -28,7 +28,7 @@ export const Projects = () => {
 
   return (
     <div
-      className="w-screen h-screen flex flex-col items-center justify-center"
+      className="w-screen h-full flex flex-col items-center justify-center"
       id="3"
     >
       <div className="m-20">
