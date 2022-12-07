@@ -6,7 +6,7 @@ export const Internship = () => {
   const [click, setClick] = useState(false);
   return (
     <div
-      className="w-screen h-full flex flex-col items-center justify-center"
+      className="w-full h-screen flex flex-col items-center justify-center"
       id="4"
     >
       <div className="m-20">

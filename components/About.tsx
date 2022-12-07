@@ -3,8 +3,8 @@ import { FadeIn } from "ts-react-fade";
 
 export const About = () => {
   return (
-    <div className="w-full h-full flex items-center ddd" id="1">
-      <div className="w-full h-full m-20 flex justify-center items-center">
+    <div className="w-full h-screen flex items-center" id="1">
+      <div className="flex justify-center items-center pt-20 m-20">
         <div className="text-7xl font-bold font-Roboto">
           <div className="flex w-screen justify-between mobile">
             <div>
@@ -19,6 +19,7 @@ export const About = () => {
                   width={500}
                   height={300}
                   alt="프로필이미지"
+                  className="profileImage"
                 />
               </div>
             </div>

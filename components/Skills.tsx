@@ -104,8 +104,8 @@ import Image from "next/image";
 
 export const Skills = () => {
   return (
-    <div className="flex justify-center w-screen h-full">
-      <div className="flex flex-col justify-center" id="2">
+    <div className="flex justify-center w-full h-screen" id="2">
+      <div className="flex flex-col justify-center px-10">
         <Container
           position="Database |"
           skills="Firebase"

@@ -3,7 +3,7 @@ import { ModalType } from "../pages";
 
 export const Nav = ({ setModal }: ModalType) => {
   return (
-    <div className="h-20 w-screen fixed flex justify-between items-center z-10 px-10 bg-[#e1dfdd] nav">
+    <div className="h-20 w-full fixed flex justify-between items-center z-10 px-10 nav">
       {NAV_LIST.map((list) => {
         return (
           <div className="px-5 navItem">
