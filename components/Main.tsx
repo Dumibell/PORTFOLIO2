@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export const Main = () => {
   return (
-    <div className="overflow-y-hidden">
+    <div className="overflow-y-hidden flex flex-col">
       <About />
       <Skills />
       <Projects />

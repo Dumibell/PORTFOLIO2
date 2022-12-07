@@ -8,7 +8,7 @@ export const Project3 = () => {
   const [click, setClick] = useState(false);
   return (
     <>
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center overflow-x-scroll">
         <div className="text-7xl font-bold font-Roboto">
           <p>WE</p>
           <p>SOP</p>

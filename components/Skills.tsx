@@ -113,9 +113,11 @@ export const Skills = () => {
         />
         <Container
           position="Frontend |"
-          skills="JavaScript, TypeScript, React.js, Tailwindcss, Sass, styled-component"
-          text1="- React.js와 Sass, styled-component를 사용하여 프로젝트를 진행하였습니다."
-          text2="- 인턴십 기간동안 Next.js와 TypeScript, tailwindcss를 사용하여 예약확인 페이지를 만들었습니다."
+          skills="JavaScript, React.js, Next.js, TypeScript, Tailwindcss, Scss, styled-component"
+          text1="- JavaScript(ES6): 동작원리에 대해 이해하며 꾸준히 학습하고 있습니다."
+          text2="- React.js: 여러번의 프로젝트를 경험하며 state를 통한 상태관리와 component 구조에 대해 이해하고 적절히 활용할 수 있습니다."
+          text3="- Next.js & TypeScript: 인턴십 기간동안 Next.js와 TypeScript를 사용하여 프로젝트를 진행한 경험이 있습니다."
+          text4="- Styled-Component & Scss: props를 통한 style 속성 변경과 nesting을 활용해 코드를 효율적으로 작성할 수 있습니다. "
         />
         <Container
           position="Business Tool |"
@@ -130,11 +132,22 @@ export const Skills = () => {
 interface propsTypes {
   position: string;
   skills: string;
+  skill?: string;
   text1: string;
   text2?: string;
+  text3?: string;
+  text4?: string;
 }
 
-const Container = ({ position, skills, text1, text2 }: propsTypes) => {
+const Container = ({
+  position,
+  skills,
+  skill,
+  text1,
+  text2,
+  text3,
+  text4,
+}: propsTypes) => {
   return (
     <div className="my-4">
       <p>
@@ -143,8 +156,12 @@ const Container = ({ position, skills, text1, text2 }: propsTypes) => {
         </span>
         <span className="ml-2 text-lg font-medium">{skills}</span>
       </p>
-      <p>{text1}</p>
-      <p>{text2}</p>
+      <div className="mt-1">
+        <p>{text1}</p>
+        <p>{text2}</p>
+        <p>{text3}</p>
+        <p>{text4}</p>
+      </div>
     </div>
   );
 };

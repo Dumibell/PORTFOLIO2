@@ -9,8 +9,10 @@
 
 body {
   box-sizing: content-box;
-  /* width: 100%;
-  height: 100vh; */
+  margin: 0;
+
+  /* width: 100%; */
+  height: 100vh;
   background-color: #e1dfdd;
 }
 
@@ -160,26 +162,24 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .mobile {
     display: flex;
     flex-direction: column;
   }
   .selfIntroduction {
     margin-top: 10px;
+    margin-right: 60px;
   }
   .largeTitle {
-    font-size: 60px;
+    font-size: 40px;
   }
   .name {
     margin-top: 15px;
+    margin-right: 60px;
   }
 
-  /* .navItem {
+  .navItem {
     padding: 0 10px 0 10px;
   }
-
-  .profileImage {
-    width: 300px;
-  } */
 }
