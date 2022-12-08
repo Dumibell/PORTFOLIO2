@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FadeIn } from "ts-react-fade";
+import mainImage from "../public/images/profile_img.jpeg";
 
 export const About = () => {
   return (
@@ -15,7 +16,7 @@ export const About = () => {
 
               <div className=" mt-3 fadeIn image">
                 <Image
-                  src="/images/profile_img.jpeg"
+                  src={mainImage}
                   width={500}
                   height={300}
                   alt="프로필이미지"
