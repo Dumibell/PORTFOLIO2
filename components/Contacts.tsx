@@ -1,24 +1,24 @@
 import { FadeIn } from "ts-react-fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, IconName } from "@fortawesome/free-brands-svg-icons";
 import { faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { ModalType } from "../pages";
-import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 export const Contacts = ({ setModal }: ModalType) => {
   return (
-    <div className="containerFadeIn">
+    <div className="containerFadeIn w-screen h-screen">
       <div className="bg-black">
         <FontAwesomeIcon
           icon={faArrowLeft}
-          className="text-white fixed m-10 hover:cursor-pointer"
+          className="text-white fixed m-10 hover:cursor-pointer w-10"
           size="2x"
           onClick={() => setModal(false)}
         />
-        <div className="h-screen w-screen flex items-center text-white justify-center">
+        <div className="w-full h-screen flex items-center text-white justify-center">
           <div className="font-Roboto">
             <a
               href="mailto:choyejee14@gmail.com"
@@ -97,8 +97,8 @@ const ContactLists = ({
 }: ContactListsType) => {
   return (
     <div className={nameOfClass}>
-      <div className="hover:underline">
-        <FontAwesomeIcon icon={icon} className="text-white" />
+      <div className="hover:underline flex">
+        <FontAwesomeIcon icon={icon} className="text-white w-5" />
         <span className="ml-1">{title} </span>
         <a href={href} target="_blank">
           {contactlist}
