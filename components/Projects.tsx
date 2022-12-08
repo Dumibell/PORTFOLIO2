@@ -148,7 +148,7 @@ export const ProjectDetail = ({
           {web ? (
             <div className="hover:translate-y-[-1px] hover:font-bold mr-3">
               <a href={web} target="_blank">
-                <FontAwesomeIcon icon={faGlobe} />
+                <FontAwesomeIcon icon={faGlobe} className="w-4" />
                 <span> 데모 사이트</span>
               </a>
             </div>
@@ -157,14 +157,14 @@ export const ProjectDetail = ({
           )}
           <div className="hover:translate-y-[-1px] hover:font-bold">
             <a href={github} target="_blank">
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} className="w-4" />
               <span> Github Repository</span>
             </a>
           </div>
           {blog ? (
             <div className="hover:translate-y-[-1px] hover:font-bold ml-3">
               <a href={blog} target="_blank">
-                <FontAwesomeIcon icon={faBlog} />
+                <FontAwesomeIcon icon={faBlog} className="w-4" />
                 <span> Blog Link</span>
               </a>
             </div>
