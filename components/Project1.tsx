@@ -42,7 +42,7 @@ export const Project1 = () => {
           />
         ) : (
           <div className="w-[830px] h-[460px] flex video">
-            <video poster="/images/buffer.png" autoPlay loop muted>
+            <video poster="/images/project1-buffer.jpeg" autoPlay loop muted>
               <source src="/videos/reading.mp4" type="video/mp4" />
             </video>
           </div>
