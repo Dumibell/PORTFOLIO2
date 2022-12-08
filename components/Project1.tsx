@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ProjectDetail } from "./Projects";
 
 export const Project1 = () => {
   const [click, setClick] = useState(false);
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   return (
     <>
       <div className="flex flex-col justify-center">
@@ -39,7 +42,9 @@ export const Project1 = () => {
           />
         ) : (
           <div className="w-[830px] h-[460px] flex video">
-            <video src="/videos/reading.mp4" autoPlay loop muted />
+            <video poster="/images/buffer.png" autoPlay loop muted>
+              <source src="/videos/reading.mp4" type="video/mp4" />
+            </video>
           </div>
         )}
       </div>
