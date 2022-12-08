@@ -10,7 +10,7 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 export const Contacts = ({ setModal }: ModalType) => {
   return (
-    <div className="containerFadeIn w-screen h-screen">
+    <div className="containerFadeIn w-screen h-screen text-white">
       <div className="bg-black">
         <FontAwesomeIcon
           icon={faArrowLeft}
@@ -18,7 +18,7 @@ export const Contacts = ({ setModal }: ModalType) => {
           size="2x"
           onClick={() => setModal(false)}
         />
-        <div className="w-full h-screen flex items-center text-white justify-center">
+        <div className="w-full h-screen flex items-center justify-center">
           <div className="font-Roboto">
             <a
               href="mailto:choyejee14@gmail.com"
@@ -98,9 +98,9 @@ const ContactLists = ({
   return (
     <div className={nameOfClass}>
       <div className="hover:underline flex">
-        <FontAwesomeIcon icon={icon} className="text-white w-5" />
+        <FontAwesomeIcon icon={icon} className="w-5" />
         <span className="ml-1">{title} </span>
-        <a href={href} target="_blank">
+        <a href={href} target="_blank" className="ml-1">
           {contactlist}
         </a>
       </div>
