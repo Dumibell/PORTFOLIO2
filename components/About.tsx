@@ -22,6 +22,7 @@ export const About = () => {
                   alt="프로필이미지"
                   priority
                   className="profileImage"
+                  placeholder="blur"
                 />
               </div>
             </div>

@@ -4,9 +4,11 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = {
-  webpack(config) {
-    config.infrastructureLogging = { debug: /PackFileCache/ };
-    return config;
-  },
-};
+// module.exports = {
+//   webpack(config) {
+//     config.infrastructureLogging = { debug: /PackFileCache/ };
+//     return config;
+//   },
+// };
+
+module.exports = nextConfig;
