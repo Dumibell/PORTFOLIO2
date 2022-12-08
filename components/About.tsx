@@ -49,7 +49,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-end mr-40 min-w-[450px] name">
+          <div className="flex flex-col items-end mr-40 min-w-[400px] name">
             <div className="flex flex-col items-end largeTitle">
               <p>JENNY YEJEE</p>
               <p>CHO</p>
