@@ -19,6 +19,7 @@ export const About = () => {
                   width={500}
                   height={300}
                   alt="프로필이미지"
+                  priority
                   className="profileImage"
                 />
               </div>
