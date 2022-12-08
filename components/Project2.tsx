@@ -40,12 +40,9 @@ export const Project2 = () => {
           />
         ) : (
           <div className="w-[830px] h-[460px] flex video">
-            <video
-              src="/videos/마이페이크트립_검색리스트.mov"
-              autoPlay
-              loop
-              muted
-            />
+            <video autoPlay loop muted>
+              <source src="/videos/마이페이크트립_검색리스트.mov" />
+            </video>
           </div>
         )}
       </div>

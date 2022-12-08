@@ -41,7 +41,9 @@ export const ToyProject = () => {
           />
         ) : (
           <div className="w-[800px] h-[460px] flex">
-            <video src="/videos/todo.mp4" autoPlay loop muted />
+            <video autoPlay loop muted>
+              <source src="/videos/todo.mp4" type="video/mp4" />
+            </video>
           </div>
         )}
       </div>

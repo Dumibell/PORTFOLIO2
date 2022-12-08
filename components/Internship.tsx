@@ -85,7 +85,9 @@ export const Internship = () => {
               />
             ) : (
               <div className="w-[800px] h-[450px] flex video">
-                <video src="/videos/vetflux.mov" autoPlay loop muted />
+                <video autoPlay loop muted>
+                  <source src="/videos/vetflux.mov" />
+                </video>
               </div>
             )}
           </div>
