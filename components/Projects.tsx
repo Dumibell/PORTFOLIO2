@@ -144,12 +144,12 @@ export const ProjectDetail = ({
             </div> */}
           </div>
         </div>
-        <div className="mt-2.5 flex">
+        <div className="mt-2.5 flex text-[#ffff99]">
           {web ? (
             <div className="hover:translate-y-[-1px] hover:font-bold mr-3">
               <a href={web} target="_blank">
                 <FontAwesomeIcon icon={faGlobe} />
-                <span> Website</span>
+                <span> 데모 사이트</span>
               </a>
             </div>
           ) : (

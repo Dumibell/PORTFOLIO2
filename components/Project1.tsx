@@ -19,7 +19,11 @@ export const Project1 = () => {
             setClick(!click);
           }}
         >
-          {click ? "← Go Back" : "→ See More"}
+          {click ? (
+            "← Go Back"
+          ) : (
+            <div className="animate-bounce">→ See More</div>
+          )}
         </div>
       </div>
       <div className="flex items-center">
@@ -27,7 +31,7 @@ export const Project1 = () => {
           <ProjectDetail
             title="🌱 독후감 작성을 위한 블로그 형식의 웹사이트"
             period="2022.11.02 ~ 2022.11.12"
-            member="프론트/백엔드 1명"
+            member="단독 개발"
             skills="HTML/CSS, JavaScript, React.js, TailwindCss, Firebase"
             myJob="전체 페이지 기획 및 개발"
             text1="- 매일 책 읽는 습관을 기르기 위해 시작한 개인 프로젝트입니다. "

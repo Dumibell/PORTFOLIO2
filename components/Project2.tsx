@@ -20,7 +20,11 @@ export const Project2 = () => {
             setClick(!click);
           }}
         >
-          {click ? "← Go Back" : "→ See More"}
+          {click ? (
+            "← Go Back"
+          ) : (
+            <div className="animate-bounce">→ See More</div>
+          )}
         </div>
       </div>
       <div className="flex items-center">

@@ -19,7 +19,11 @@ export const ToyProject = () => {
             setClick(!click);
           }}
         >
-          {click ? "← Go Back" : "→ See More"}
+          {click ? (
+            "← Go Back"
+          ) : (
+            <div className="animate-bounce">→ See More</div>
+          )}
         </div>
       </div>
       <div className="flex items-center">
@@ -27,7 +31,7 @@ export const ToyProject = () => {
           <ProjectDetail
             title="🌱 일정관리를 위한 투두리스트"
             period="2022.04.18 ~ 2022.04.22"
-            member="프론트/백엔드 1명"
+            member="단독 개발"
             skills="HTML/CSS, JavaScript, React.js, TailwindCss, Firebase"
             myJob="전체 페이지 기획 및 개발"
             text1="- 개인별로 일정을 관리할 수 있는 웹앱 형태의 페이지입니다."
