@@ -45,7 +45,7 @@ export const Project3 = () => {
         ) : (
           <div className="w-[800px] h-[450px] flex justify-center video">
             <video autoPlay loop muted>
-              <source src="/videos/wesop.mp4" type="video/mp4" />
+              <source src="/videos/wesop.mov" />
             </video>
           </div>
         )}

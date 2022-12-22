@@ -47,7 +47,7 @@ export const Project1 = () => {
         ) : (
           <div className="w-[830px] h-[460px] flex video">
             <video poster="/images/project1-buffer.jpeg" autoPlay loop muted>
-              <source src="/videos/reading.mp4" type="video/mp4" />
+              <source src="/videos/reading.mov" />
             </video>
           </div>
         )}
