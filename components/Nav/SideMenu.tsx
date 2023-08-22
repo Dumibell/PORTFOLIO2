@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Dispatch, SetStateAction } from "react";
 
 import { Link } from "react-scroll";
+import { mobile } from "../../styles/theme";
 
 interface SideMenuPropsType {
   setSideMenuOpen: Dispatch<SetStateAction<boolean>>;
@@ -53,7 +54,7 @@ const Container = styled.div`
     display: flex;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: ${mobile}) {
     display: none;
   }
 `;

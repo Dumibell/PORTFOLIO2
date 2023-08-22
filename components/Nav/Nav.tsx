@@ -4,6 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Dispatch, SetStateAction, useState } from "react";
 import { SideMenu } from "./SideMenu";
+import { mobile } from "../../styles/theme";
 
 interface NavListType {
   id: number;
@@ -60,6 +61,8 @@ export const Nav = ({ setModal }: NavPropsType) => {
 
 const NavContainer = styled.ul`
   position: fixed;
+  display: flex;
+  justify-content: center;
   background-color: #e1dfdd;
   height: 80px;
   width: 100%;
@@ -71,14 +74,14 @@ const NavContainer = styled.ul`
 
   .pc {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 100%;
     justify-content: space-between;
     align-items: center;
   }
 
   /* 600px 미만일 때 */
-  @media (max-width: 600px) {
+  @media (max-width: ${mobile}) {
     .pc {
       display: none;
     }
