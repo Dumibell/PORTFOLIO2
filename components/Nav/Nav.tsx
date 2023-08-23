@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { SideMenu } from "./SideMenu";
 import { color, mobile } from "../../styles/theme";
+import { useSelector } from "react-redux";
 
 export interface NavListType {
   id: number;
@@ -22,14 +23,12 @@ export const NAV_LIST: NavListType[] = [
 
 export const Nav = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
-  //현재 섹션
-  const [section, setSection] = useState<NavListType>(NAV_LIST[0]);
+
+  const inView = useSelector((state: boolean) => state);
 
   return (
-    <NavContainer className={section.offset === "5" ? "black" : ""}>
-      {sideMenuOpen && (
-        <SideMenu setSideMenuOpen={setSideMenuOpen} setSection={setSection} />
-      )}
+    <NavContainer className={inView ? "black" : ""}>
+      {sideMenuOpen && <SideMenu setSideMenuOpen={setSideMenuOpen} />}
       <div className="pc">
         {NAV_LIST.map((list) => {
           return (
@@ -37,9 +36,8 @@ export const Nav = () => {
               <Link
                 to={list.offset || ""}
                 spy={true}
-                smooth={list.offset === "5" ? false : true}
+                smooth={true}
                 key={list.id}
-                onClick={() => setSection(list)}
               >
                 <p>{list.name}</p>
               </Link>

@@ -9,12 +9,8 @@ import { mobile } from "../../styles/theme";
 
 interface SideMenuPropsType {
   setSideMenuOpen: Dispatch<SetStateAction<boolean>>;
-  setSection: Dispatch<SetStateAction<NavListType>>;
 }
-export const SideMenu = ({
-  setSideMenuOpen,
-  setSection,
-}: SideMenuPropsType) => {
+export const SideMenu = ({ setSideMenuOpen }: SideMenuPropsType) => {
   return (
     <Container>
       <button onClick={() => setSideMenuOpen(false)}>
@@ -26,8 +22,8 @@ export const SideMenu = ({
             <Link
               to={list.offset || ""}
               spy={true}
+              smooth={true}
               onClick={() => {
-                setSection(list || {});
                 setSideMenuOpen(false);
               }}
             >

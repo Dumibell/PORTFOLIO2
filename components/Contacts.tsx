@@ -4,12 +4,19 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { keyframes, styled } from "styled-components";
 import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setInView } from "../store";
+
 export const Contacts = () => {
+  const dispatch = useDispatch();
   const { ref, inView } = useInView({ threshold: 0.7 });
-
-  console.log(inView);
-
   const name = "JENNY YEJEE CHO";
+
+  //전역상태 변경
+  useEffect(() => {
+    dispatch(setInView(inView));
+  }, [inView]);
 
   return (
     <Container id="5" className="font-Roboto" ref={ref}>
