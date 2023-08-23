@@ -1,109 +1,123 @@
-import { FadeIn } from "ts-react-fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, IconName } from "@fortawesome/free-brands-svg-icons";
-import { faBlog } from "@fortawesome/free-solid-svg-icons";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { ModalType } from "../pages";
-import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { keyframes, styled } from "styled-components";
+import { useInView } from "react-intersection-observer";
+export const Contacts = () => {
+  const { ref, inView } = useInView({ threshold: 0.7 });
 
-export const Contacts = ({ setModal }: ModalType) => {
+  console.log(inView);
+
+  const name = "JENNY YEJEE CHO";
+
   return (
-    <div className="containerFadeIn w-screen h-screen text-white">
-      <div className="bg-black">
-        <FontAwesomeIcon
-          icon={faArrowLeft}
-          className="text-white fixed m-10 hover:cursor-pointer w-10"
-          size="2x"
-          onClick={() => setModal(false)}
-        />
-        <div className="w-full h-screen flex items-center justify-center">
-          <div className="font-Roboto">
-            <a
-              href="mailto:choyejee14@gmail.com"
-              className="text-7xl font-bold contactName"
-            >
-              <div className="flex ">
-                <div className="text1">J</div>
-                <div className="text2">E</div>
-                <div className="text3">N</div>
-                <div className="text4">N</div>
-                <div className="text5">Y</div>
-              </div>
-              <div className="flex">
-                <div className="text1">Y</div>
-                <div className="text2">E</div>
-                <div className="text3">J</div>
-                <div className="text4">E</div>
-                <div className="text5">E</div>
+    <Container id="5" className="font-Roboto" ref={ref}>
+      {inView && (
+        <div>
+          <Name>
+            {name.split("").map((letter, i) => {
+              return (
+                <Letter key={i} delay={(i + 1) / 10}>
+                  {letter}
+                  {i === 4 && <br />}
+                </Letter>
+              );
+            })}
+          </Name>
 
-                <div className="ml-4 text6">C</div>
-                <div className="text7">H</div>
-                <div className="text8">O</div>
-              </div>
-            </a>
-
-            <div className="text-lg mt-3">
-              <ContactLists
-                nameOfClass="text3"
-                icon={faPhone}
-                title="Phone."
-                contactlist="010-5120-6319"
-              />
-              <ContactLists
-                nameOfClass="text4"
-                icon={faEnvelope}
-                title="Mail."
-                href="mailto:choyejee14@gmail.com"
-                contactlist="choyejee14@gmail.com"
-              />
-              <ContactLists
-                nameOfClass="text5"
-                icon={faGithub}
-                title="Github."
-                href="https://github.com/Dumibell"
-                contactlist="https://github.com/Dumibell"
-              />
-              <ContactLists
-                nameOfClass="text6"
-                icon={faBlog}
-                title="Blog."
-                href="https://velog.io/@dumibell"
-                contactlist="https://velog.io/@dumibell"
-              />
-            </div>
-          </div>
+          <ContactLists>
+            <List className="fadeIn animation1">
+              <FontAwesomeIcon icon={faPhone} className="icon" />
+              <a>010.5120.5319</a>
+            </List>
+            <List className="fadeIn animation2">
+              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              <a href="mailto:choyejee14@gmail.com">choyejee14@gmail.com</a>
+            </List>
+            <List className="fadeIn animation3">
+              <FontAwesomeIcon icon={faGithub} className="icon " />
+              <a href="https://github.com/Dumibell">
+                https://github.com/Dumibell
+              </a>
+            </List>
+          </ContactLists>
         </div>
-      </div>
-    </div>
+      )}
+    </Container>
   );
 };
 
-interface ContactListsType {
-  nameOfClass: string;
-  icon: IconDefinition;
-  title: string;
-  href?: string;
-  contactlist: string;
-}
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
 
-const ContactLists = ({
-  nameOfClass,
-  icon,
-  title,
-  href,
-  contactlist,
-}: ContactListsType) => {
-  return (
-    <div className={nameOfClass}>
-      <div className="hover:underline flex">
-        <FontAwesomeIcon icon={icon} className="w-5" />
-        <span className="ml-1">{title} </span>
-        <a href={href} target="_blank" className="ml-1">
-          {contactlist}
-        </a>
-      </div>
-    </div>
-  );
-};
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+`;
+
+const Name = styled.p`
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  animation: ${fadeIn} 1.8s;
+  animation-fill-mode: forwards;
+`;
+
+const Letter = styled.span<{ delay: number }>`
+  opacity: 0;
+  animation: ${fadeIn} 1.8s;
+  animation-delay: ${(props) => props.delay}s;
+  animation-fill-mode: forwards;
+`;
+
+const ContactLists = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+
+  .icon {
+    width: 20px;
+  }
+`;
+
+const List = styled.div`
+  display: flex;
+  font-size: 20px;
+  gap: 10px;
+  opacity: 0;
+
+  animation: ${fadeIn} 1.8s;
+  animation-fill-mode: forwards;
+
+  &.animation1 {
+    animation-delay: 1s;
+  }
+
+  &.animation2 {
+    animation-delay: 1.1s;
+  }
+
+  &.animation3 {
+    animation-delay: 1.3s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`;
