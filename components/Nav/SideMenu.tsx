@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { NAV_LIST } from "./Nav";
+import { NAV_LIST, NavListType } from "./Nav";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Dispatch, SetStateAction } from "react";
@@ -9,10 +9,12 @@ import { mobile } from "../../styles/theme";
 
 interface SideMenuPropsType {
   setSideMenuOpen: Dispatch<SetStateAction<boolean>>;
-  setModal: Dispatch<SetStateAction<boolean>>;
+  setSection: Dispatch<SetStateAction<NavListType>>;
 }
-
-export const SideMenu = ({ setSideMenuOpen, setModal }: SideMenuPropsType) => {
+export const SideMenu = ({
+  setSideMenuOpen,
+  setSection,
+}: SideMenuPropsType) => {
   return (
     <Container>
       <button onClick={() => setSideMenuOpen(false)}>
@@ -20,17 +22,17 @@ export const SideMenu = ({ setSideMenuOpen, setModal }: SideMenuPropsType) => {
       </button>
       <InnerContainer>
         {NAV_LIST.map((list) => {
-          return list.offset ? (
+          return (
             <Link
-              to={list.offset}
+              to={list.offset || ""}
               spy={true}
-              smooth={true}
-              onClick={() => setSideMenuOpen(false)}
+              onClick={() => {
+                setSection(list || {});
+                setSideMenuOpen(false);
+              }}
             >
               <List>{list.name}</List>
             </Link>
-          ) : (
-            <List onClick={() => setModal(true)}>{list.name}</List>
           );
         })}
       </InnerContainer>

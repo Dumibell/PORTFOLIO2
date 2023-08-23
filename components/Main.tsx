@@ -1,20 +1,30 @@
 import { About } from "./About";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
-import { Internship } from "./Internship";
-import { useEffect, useState } from "react";
+import { styled } from "styled-components";
+import { Experiences } from "./Expreriences";
+import { Contacts } from "./Contacts";
+import { useEffect } from "react";
 
 export const Main = () => {
   return (
-    <div className="overflow-y-hidden flex flex-col">
+    <MainContainer>
       <About />
       <Skills />
+      <Experiences />
       <Projects />
-      <Internship />
-    </div>
+      <Contacts />
+    </MainContainer>
   );
 };
 export interface ClickType {
   click: boolean;
   setClick: (x: boolean) => void;
 }
+
+const MainContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+`;

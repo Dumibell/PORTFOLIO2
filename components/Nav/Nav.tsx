@@ -2,18 +2,14 @@ import { Link } from "react-scroll";
 import { styled } from "styled-components";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import { SideMenu } from "./SideMenu";
-import { mobile } from "../../styles/theme";
+import { color, mobile } from "../../styles/theme";
 
-interface NavListType {
+export interface NavListType {
   id: number;
   name: string;
   offset?: string;
-}
-
-interface NavPropsType {
-  setModal: Dispatch<SetStateAction<boolean>>;
 }
 
 export const NAV_LIST: NavListType[] = [
@@ -21,28 +17,32 @@ export const NAV_LIST: NavListType[] = [
   { id: 2, name: "SKILLS", offset: "2" },
   { id: 3, name: "EXPERIENCES", offset: "3" },
   { id: 4, name: "PROJECTS", offset: "4" },
-  { id: 5, name: "CONTACTS" },
+  { id: 5, name: "CONTACTS", offset: "5" },
 ];
 
-export const Nav = ({ setModal }: NavPropsType) => {
+export const Nav = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
+  //현재 섹션
+  const [section, setSection] = useState<NavListType>(NAV_LIST[0]);
 
   return (
-    <NavContainer>
+    <NavContainer className={section.offset === "5" ? "black" : ""}>
       {sideMenuOpen && (
-        <SideMenu setSideMenuOpen={setSideMenuOpen} setModal={setModal} />
+        <SideMenu setSideMenuOpen={setSideMenuOpen} setSection={setSection} />
       )}
       <div className="pc">
         {NAV_LIST.map((list) => {
           return (
-            <List>
-              {list.offset ? (
-                <Link to={list.offset} spy={true} smooth={true} key={list.id}>
-                  <p>{list.name}</p>
-                </Link>
-              ) : (
-                <p onClick={() => setModal(true)}>{list.name}</p>
-              )}
+            <List key={list.id}>
+              <Link
+                to={list.offset || ""}
+                spy={true}
+                smooth={list.offset === "5" ? false : true}
+                key={list.id}
+                onClick={() => setSection(list)}
+              >
+                <p>{list.name}</p>
+              </Link>
             </List>
           );
         })}
@@ -63,10 +63,15 @@ const NavContainer = styled.ul`
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: #e1dfdd;
+  background-color: ${color.background};
   height: 80px;
   width: 100%;
   z-index: 10;
+
+  &.black {
+    background-color: black;
+    color: white;
+  }
 
   .mo {
     display: none;
