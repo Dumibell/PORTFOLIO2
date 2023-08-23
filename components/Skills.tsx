@@ -89,9 +89,10 @@ const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin: 80px;
+  margin: 150px;
 
   @media (max-width: ${mobile}) {
+    margin: 80px;
   }
 `;
 
