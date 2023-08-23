@@ -10,9 +10,9 @@ module.exports = {
         Anton: ["Anton", "sans-serif"],
         Oswald: ["Oswald", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
-        Gothic: ["Gothic A1", "sans-serif"]
-       },
+        Gothic: ["Gothic A1", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
+};
