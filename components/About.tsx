@@ -78,7 +78,6 @@ const Container = styled.section`
 
   @media (max-width: ${mobile}) {
     height: auto;
-    margin-top: 80px;
   }
 `;
 
@@ -94,6 +93,7 @@ const InnerContainer = styled.div`
   @media (max-width: ${mobile}) {
     min-width: auto;
     max-width: 500px;
+    margin-top: 80px;
   }
 `;
 
