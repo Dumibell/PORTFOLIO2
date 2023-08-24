@@ -5,12 +5,12 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { keyframes, styled } from "styled-components";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setInView } from "../store";
 
 export const Contacts = () => {
   const dispatch = useDispatch();
-  const { ref, inView } = useInView({ threshold: 0.7 });
+  const { ref, inView } = useInView({ threshold: 0.9 });
   const name = "JENNY YEJEE CHO";
 
   //전역상태 변경
@@ -19,7 +19,7 @@ export const Contacts = () => {
   }, [inView]);
 
   return (
-    <Container id="5" className="font-Roboto" ref={ref}>
+    <Container id="5" ref={ref} className="font-Roboto">
       {inView && (
         <div>
           <Name>
@@ -36,7 +36,7 @@ export const Contacts = () => {
           <ContactLists>
             <List className="fadeIn animation1">
               <FontAwesomeIcon icon={faPhone} className="icon" />
-              <a>010.5120.5319</a>
+              <a href="tel:010-5120-6319">010.5120.5319</a>
             </List>
             <List className="fadeIn animation2">
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
@@ -58,7 +58,7 @@ export const Contacts = () => {
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -80,8 +80,6 @@ const Name = styled.p`
   font-size: 60px;
   line-height: 70px;
   font-weight: 600;
-  animation: ${fadeIn} 1.8s;
-  animation-fill-mode: forwards;
 `;
 
 const Letter = styled.span<{ delay: number }>`
@@ -112,15 +110,15 @@ const List = styled.div`
   animation-fill-mode: forwards;
 
   &.animation1 {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
   }
 
   &.animation2 {
-    animation-delay: 1.1s;
+    animation-delay: 0.6s;
   }
 
   &.animation3 {
-    animation-delay: 1.3s;
+    animation-delay: 0.7s;
   }
 
   &:hover {

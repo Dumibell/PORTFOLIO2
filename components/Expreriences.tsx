@@ -34,14 +34,14 @@ export const Experiences = () => {
                 <span className="period">2023.04 - 2023.06</span>
               </p>
 
-              <p>- 메인 및 기타 다양한 페이지와 컴포넌트를 개발하였습니다.</p>
+              <p>- 메인 및 기타 다양한 페이지와 컴포넌트를 개발</p>
               <p>
                 - 애니메이션 효과를 위해 필요한 라이브러리 조사와 관련 함수를
-                개발하여 개발 시간을 단축했습니다.
+                개발하여 개발 시간을 단축
               </p>
               <p>
-                - nextjs 13에서 사용되는 Google 폰트를 전역 설정하여 전체 코드의
-                품질을 개선했습니다.
+                - nextjs 13에서 사용되는 Google 폰트 전역 설정으로 전체 코드의
+                품질을 개선
               </p>
             </div>
             <div>
@@ -49,10 +49,10 @@ export const Experiences = () => {
                 <span className="projectName">| HLI 통합관리시스템(CMS)</span>
                 <span className="period">2023.01 - 2023.07</span>
               </p>
-              <p>- 프론트엔드 화면을 개발하고 유지보수를 담당했습니다.</p>
+              <p>- 프론트엔드 화면 개발 및 유지보수를 담당</p>
               <p>
-                - 기존 백엔드 레거시 코드를 정리하고 Node.js로 마이그레이션하는
-                작업을 진행했습니다.
+                - 기존 백엔드 레거시 코드를 정리하고 Node.js로 마이그레이션 작업
+                진행
               </p>
             </div>
             <div>
@@ -60,11 +60,25 @@ export const Experiences = () => {
                 <span className="projectName">| 알라카르테몰(E-Commerce)</span>
                 <span className="period">2023.01 - 2023.03</span>
               </p>
-              <p>- 메인 및 기타 다양한 페이지와 컴포넌트를 개발하였습니다.</p>
+              <p>- 메인 및 기타 다양한 페이지와 컴포넌트를 개발</p>
+              <p>
+                - wish list, 슬라이드 등 공통 컴포넌트를 개발 및 적용하여 전체
+                개발 시간을 단축
+              </p>
               <p>
                 - SVG 사용에 관한 컨벤션을 정의하여 중복 파일과 코드를
-                최소화하는 작업을 수행했습니다.
+                최소화하는 작업을 수행
               </p>
+            </div>
+            <div>
+              <p>
+                <span className="projectName">| 프로젝트 외 기타 업무</span>
+                <span className="period">2023.01 - 2023.07</span>
+              </p>
+              <p>- 사업 제안서 작성 및 발표자료(PPT) 작업 수행</p>
+              <p>- 단위테스트 진행 보고서 작성</p>
+              <p>- 동료 개발자와 코드리뷰 진행</p>
+              <p>- 사내 기술 블로그 작성</p>
             </div>
           </DescriptionBox>
         </CareerBox>
@@ -115,7 +129,7 @@ const Container = styled.section`
 
 const InnerContainer = styled.div`
   margin: 100px;
-  margin-top: 200px;
+  margin-top: 150px;
   width: 1200px;
   height: 100%;
 
@@ -129,6 +143,7 @@ const SectionTitle = styled.p`
   text-align: end;
   font-size: 60px;
   margin-bottom: 50px;
+  text-shadow: 1px 1px 1px ${color.gray.primary};
 `;
 
 const CareerBox = styled.div`
@@ -137,7 +152,10 @@ const CareerBox = styled.div`
   gap: 20px;
   width: 100%;
   height: 100%;
-  /* margin-bottom: 100px; */
+
+  @media (max-width: ${mobile}) {
+    justify-content: flex-start;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -158,7 +176,7 @@ const ImageContainer = styled.div`
 `;
 
 const Border = styled.div`
-  width: 1px;
+  width: 0.5px;
   border: 1px solid ${color.gray.primary};
 
   @media (max-width: ${mobile}) {

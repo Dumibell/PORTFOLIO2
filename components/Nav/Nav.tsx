@@ -24,10 +24,12 @@ export const NAV_LIST: NavListType[] = [
 export const Nav = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
 
+  const contactsInView = useSelector((state: boolean) => state);
+
   const inView = useSelector((state: boolean) => state);
 
   return (
-    <NavContainer className={inView ? "black" : ""}>
+    <NavContainer className={contactsInView ? "black" : ""}>
       {sideMenuOpen && <SideMenu setSideMenuOpen={setSideMenuOpen} />}
       <div className="pc">
         {NAV_LIST.map((list) => {

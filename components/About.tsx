@@ -5,8 +5,8 @@ import { mobile } from "../styles/theme";
 
 export const About = () => {
   return (
-    <Container id="1">
-      <InnerContainer className="font-Roboto">
+    <Container id="1" className="font-Roboto">
+      <InnerContainer>
         <Position>
           FRONTEND
           <br /> DEVELOPER
@@ -86,14 +86,14 @@ const InnerContainer = styled.div`
   flex-direction: column;
   width: 100%;
   min-width: 900px;
-  max-width: 1200px;
-  gap: 20px;
+  max-width: 1400px;
+  gap: 10px;
   margin: 20px;
+  margin-top: 80px;
 
   @media (max-width: ${mobile}) {
     min-width: auto;
     max-width: 500px;
-    margin-top: 80px;
   }
 `;
 
@@ -136,13 +136,13 @@ const Description = styled.div`
   margin-left: 30px;
   text-align: end;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
 
   @media (max-width: ${mobile}) {
     margin-left: 0;
     margin-top: 20px;
     text-align: start;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   opacity: 0;
@@ -160,7 +160,7 @@ const Name = styled.p`
 
   @media (max-width: ${mobile}) {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 55px;
   }
 
   animation: ${fadeIn} 1.8s;
