@@ -1,16 +1,19 @@
-## 📍 페이지 소개
+# Update
+### 2023.08.24 업데이트 내용
+- 유지보수와 가독성을 위해 TailwindCss -> Styled-Components로 변경
+- redux 전역상태 이용해 inView상태 저장 -> Contacts의 inView가 true일 때 Nav바 색상 변경
+- 모바일 반응형 추가 및 사이드메뉴 생성
+- Experience 메뉴 추가
+- Project 메뉴 UI/UX 변경
+- 사용하지 않는 코드 & 패키지 제거
 
-next.js와 typescript를 사용해 만든 개인용 포트폴리오 페이지입니다.
-<br/><br/>
+<br/>
 
-## 📍 Blockers
-
-#### 문제1
-
-- 문제: local 환경에서는 잘 보이던 gif 파일이 배포 후에 보이지 않는 이슈 발생.
-- 해결 방법: gif 용량문제 때문인 것을 확인하고 gif 파일을 모두 mov 또는 mp4 파일로 변경
-
-#### 문제2
-
-- 문제: 상위 component에서 state를 props로 내려 관리하다보니, 하위 컴포넌트 중 한 개만 event가 발생해도 전체 state가 변경되는 이슈 발생
-- 해결 방법: 상위 component의 state를 지우고 하위 컴포넌트 각각에 state를 따로 만들어주었다.
+### 이슈 
+  ```
+  File public/videos/[파일명].mp4 is 156.28 MB; this exceeds GitHub's file size limit of 100.00 MB
+  ```
+  100MB가 넘는 파일을 올려 에러가 발생했다. git lfs를 통해 해결이 가능하지만, 나는 이미 해당 파일을 commit한 후였기에 파일을 삭제해도 해결이 되지 않았다.
+  
+  해결방법: 해당 파일을 commit하기 이전으로 reset 후 변경 사항을 다시 commit 후 재push
+  
