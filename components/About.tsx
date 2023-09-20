@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mainImage from "../public/images/profile_img.jpeg";
 import { styled, keyframes } from "styled-components";
-import { mobile } from "../styles/theme";
+import { mobile, tablet } from "../styles/theme";
 
 export const About = () => {
   return (
@@ -138,11 +138,15 @@ const Description = styled.div`
   font-weight: 300;
   font-size: 16px;
 
-  @media (max-width: ${mobile}) {
-    margin-left: 0;
-    margin-top: 20px;
-    text-align: start;
+  @media (max-width: ${tablet}) {
     font-size: 15px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: ${mobile}) {
+    margin: 20px 10px;
+    text-align: start;
+    font-size: 14px;
   }
 
   opacity: 0;

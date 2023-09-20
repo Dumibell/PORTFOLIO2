@@ -91,7 +91,7 @@ const InnerContainer = styled.div`
   margin: 150px;
 
   @media (max-width: ${mobile}) {
-    margin: 80px;
+    margin: 30px 15px;
   }
 `;
 
@@ -103,6 +103,10 @@ const Category = styled.span`
 
 const Skill = styled.span`
   font-size: 20px;
+
+  @media (max-width: ${mobile}) {
+    font-size: 18px;
+  }
 `;
 
 const Description = styled.div`
@@ -111,6 +115,10 @@ const Description = styled.div`
 
   .skill {
     background: linear-gradient(to top, #ffffe0 40%, transparent 10%);
+  }
+
+  @media (max-width: ${mobile}) {
+    font-size: 16px;
   }
 `;
 
