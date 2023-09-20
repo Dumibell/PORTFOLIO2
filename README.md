@@ -2,6 +2,13 @@
 
 
 # Update
+
+### 2023.09.20 업데이트 내용
+- 모바일 화면에서 ABOUT페이지와 SKILLS페이지의 영역이 겹치던 이슈 해결
+- console창에 뜨던 에러 해결
+- 아이폰으로 접속시 PROJECTS의 영상들이 전체화면으로 재생되던 이슈 해결
+
+
 ### 2023.08.24 업데이트 내용
 - 유지보수와 가독성을 위해 TailwindCss -> Styled-Components로 변경
 - redux 전역상태 이용해 inView상태 저장 -> Contacts의 inView가 true일 때 Nav바 색상 변경
