@@ -20,6 +20,7 @@ export const SideMenu = ({ setSideMenuOpen }: SideMenuPropsType) => {
         {NAV_LIST.map((list) => {
           return (
             <Link
+              key={list.id}
               to={list.offset || ""}
               spy={true}
               smooth={true}

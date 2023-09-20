@@ -87,7 +87,7 @@ export const Projects = () => {
         <div>
           {PROJECT_LIST.map((list) => {
             return (
-              <Box>
+              <Box key={list.id}>
                 <video autoPlay loop muted>
                   <source src={`/videos/${list.src}`} />
                 </video>
