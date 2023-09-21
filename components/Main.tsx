@@ -4,7 +4,6 @@ import { Projects } from "./Projects";
 import { styled } from "styled-components";
 import { Experiences } from "./Expreriences";
 import { Contacts } from "./Contacts";
-import { useEffect } from "react";
 
 export const Main = () => {
   return (

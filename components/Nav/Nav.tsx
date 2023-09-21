@@ -26,8 +26,6 @@ export const Nav = () => {
 
   const contactsInView = useSelector((state: boolean) => state);
 
-  const inView = useSelector((state: boolean) => state);
-
   return (
     <NavContainer className={contactsInView ? "black" : ""}>
       {sideMenuOpen && <SideMenu setSideMenuOpen={setSideMenuOpen} />}
