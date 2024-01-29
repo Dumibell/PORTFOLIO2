@@ -9,3 +9,13 @@ export const color = {
     ligthslate: "#ACB3BB",
   },
 };
+
+export const lightTheme = {
+  background: "#e1dfdd",
+  textColor: "black",
+};
+
+export const darkTheme = {
+  background: "black",
+  textColor: "white",
+};

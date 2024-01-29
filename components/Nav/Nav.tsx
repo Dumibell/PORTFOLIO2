@@ -2,10 +2,13 @@ import { Link } from "react-scroll";
 import { styled } from "styled-components";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { SideMenu } from "./SideMenu";
 import { color, mobile } from "../../styles/theme";
 import { useSelector } from "react-redux";
+import { useStore } from "../../stores/store";
 
 export interface NavListType {
   id: number;
@@ -23,6 +26,7 @@ export const NAV_LIST: NavListType[] = [
 
 export const Nav = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
+  const { lightMode, changeMode } = useStore();
 
   const contactsInView = useSelector((state: boolean) => state);
 
@@ -45,6 +49,11 @@ export const Nav = () => {
           );
         })}
       </div>
+      <FontAwesomeIcon
+        icon={lightMode ? faMoon : faSun}
+        className="icon"
+        onClick={changeMode}
+      />
       <button className="mo">
         <FontAwesomeIcon
           icon={faBars}
@@ -61,10 +70,16 @@ const NavContainer = styled.ul`
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: ${color.background};
   height: 80px;
   width: 100%;
   z-index: 10;
+
+  .icon {
+    position: absolute;
+    width: 20px;
+    top: 25px;
+    right: 40px;
+  }
 
   &.black {
     background-color: black;
@@ -87,6 +102,11 @@ const NavContainer = styled.ul`
   @media (max-width: ${mobile}) {
     .pc {
       display: none;
+    }
+
+    .icon {
+      width: 25px;
+      right: 80px;
     }
 
     .mo {
