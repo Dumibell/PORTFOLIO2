@@ -4,14 +4,16 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Dispatch, SetStateAction } from "react";
 import { Link } from "react-scroll";
-import { mobile } from "../../styles/theme";
+import { darkTheme, lightTheme, mobile } from "../../styles/theme";
+import { useStore } from "../../stores/store";
 
 interface SideMenuPropsType {
   setSideMenuOpen: Dispatch<SetStateAction<boolean>>;
 }
 export const SideMenu = ({ setSideMenuOpen }: SideMenuPropsType) => {
+  const { lightMode } = useStore();
   return (
-    <Container>
+    <Container lightMode={lightMode}>
       <button onClick={() => setSideMenuOpen(false)}>
         <FontAwesomeIcon icon={faXmark} className="xMark" />
       </button>
@@ -36,11 +38,13 @@ export const SideMenu = ({ setSideMenuOpen }: SideMenuPropsType) => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.div<{ lightMode: boolean }>`
   position: fixed;
   padding: 30px;
   width: 100%;
-  background-color: inherit;
+  background-color: ${(props) =>
+    props.lightMode ? lightTheme.background : darkTheme.background};
+  /* background-color: inherit; */
   height: 100vh;
   z-index: 100;
 
