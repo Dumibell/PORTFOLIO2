@@ -1,7 +1,9 @@
 import { styled } from "styled-components";
 import { mobile } from "../styles/theme";
+import { useStore } from "../stores/store";
 
 export const Skills = () => {
+  const { lightMode } = useStore();
   return (
     <Container id="2">
       <InnerContainer>
@@ -12,7 +14,7 @@ export const Skills = () => {
               Next.js, TypeScript, React.js, JavaScript, Styled-Components
             </Skill>
           </p>
-          <Description>
+          <Description lightMode={lightMode}>
             <p>
               - <span className="skill">Next.js</span>: 서버 사이드
               렌더링(SSR)의 개념을 이해하고 있으며, 이를 통해 페이지가 서버에서
@@ -44,7 +46,7 @@ export const Skills = () => {
             <Category>Database |</Category>
             <Skill>Firebase</Skill>
           </p>
-          <Description>
+          <Description lightMode={lightMode}>
             - <span className="skill">Firabase</span>: 인턴십 프로젝트와 2번의
             개인프로젝트에서 Friebase의 Authentication, Storage, Firestore를
             통해 데이터를 관리하였습니다.
@@ -56,7 +58,7 @@ export const Skills = () => {
             <Category>Business Tools |</Category>
             <Skill>Git, Slack, Notion, Figma, AdobeXd</Skill>
           </p>
-          <Description>
+          <Description lightMode={lightMode}>
             <p>
               - <span className="skill">Git</span>: gitflow에 대해 이해하며,
               github & gitlab을 사용해 협업을 진행합니다.
@@ -109,12 +111,15 @@ const Skill = styled.span`
   }
 `;
 
-const Description = styled.div`
+const Description = styled.div<{ lightMode: boolean }>`
   font-size: 18px;
   margin-top: 10px;
 
   .skill {
-    background: linear-gradient(to top, #ffffe0 40%, transparent 10%);
+    background: ${(props) =>
+      props.lightMode
+        ? "linear-gradient(to top, #ffffe0 40%, transparent 10%)"
+        : ""};
   }
 
   @media (max-width: ${mobile}) {
