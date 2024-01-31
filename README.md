@@ -19,6 +19,10 @@
 
 <br/>
 
+### 2024.01.30 업데이트 내용
+- zustand 전역상태를 이용한 라이트/다크모드 기능 추가
+  
+
 ### 이슈 
   ```
   File public/videos/[파일명].mp4 is 156.28 MB; this exceeds GitHub's file size limit of 100.00 MB
