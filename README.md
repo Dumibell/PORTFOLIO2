@@ -23,15 +23,4 @@
 - zustand 전역상태를 이용한 라이트/다크모드 기능 추가
   
 
-### 이슈 
-  ```
-  File public/videos/[파일명].mp4 is 156.28 MB; this exceeds GitHub's file size limit of 100.00 MB
-  ```
-  100MB가 넘는 파일을 올려 에러가 발생했다. git lfs를 통해 해결이 가능하지만, 나는 이미 해당 파일을 commit한 후였기에 파일을 삭제해도 해결이 되지 않았다.
-  
-  해결방법: 해당 파일을 commit하기 이전으로 reset 후 변경 사항을 다시 commit 후 재push
-
-  <br/><br/>
-
-
 방문 링크: https://choyejee.netlify.app/ 
