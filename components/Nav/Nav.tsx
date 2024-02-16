@@ -49,11 +49,13 @@ export const Nav = () => {
           );
         })}
       </div>
-      <FontAwesomeIcon
-        icon={lightMode ? faMoon : faSun}
-        className="icon"
-        onClick={changeMode}
-      />
+      {!contactsInView && (
+        <FontAwesomeIcon
+          icon={lightMode ? faMoon : faSun}
+          className="icon"
+          onClick={changeMode}
+        />
+      )}
       <button className="mo">
         <FontAwesomeIcon
           icon={faBars}
