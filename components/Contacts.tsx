@@ -36,7 +36,7 @@ export const Contacts = () => {
           <ContactLists>
             <List className="fadeIn animation1">
               <FontAwesomeIcon icon={faPhone} className="icon" />
-              <a href="tel:010-5120-6319">010.5120.5319</a>
+              <a href="tel:010-5120-6319">010.5120.6319</a>
             </List>
             <List className="fadeIn animation2">
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
