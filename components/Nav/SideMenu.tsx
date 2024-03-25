@@ -44,6 +44,8 @@ const Container = styled.div<{ lightMode: boolean }>`
   width: 100%;
   background-color: ${(props) =>
     props.lightMode ? lightTheme.background : darkTheme.background};
+  color: ${(props) =>
+    props.lightMode ? lightTheme.textColor : darkTheme.textColor};
   /* background-color: inherit; */
   height: 100vh;
   z-index: 100;
