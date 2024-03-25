@@ -3,12 +3,70 @@ import AnvilLogo from "../public/images/anvil-logo.jpeg";
 import VetfluxLogo from "../public/images/vetflux-logo.jpeg";
 import Image from "next/image";
 import { color, mobile } from "../styles/theme";
+import KobeaLogo from "../public/images/kobea-logo.jpeg";
 
 export const Experiences = () => {
   return (
     <Container id="3">
       <InnerContainer>
         <SectionTitle>WORK EXPERIENCE</SectionTitle>
+        <CareerBox>
+          <ImageContainer>
+            <Image src={KobeaLogo} className="logoImage" />
+          </ImageContainer>
+          <Border />
+          <DescriptionBox className="hasBottomPadding">
+            <div className="introduction">
+              <p className="companyName">(주)코베아그룹</p>
+              <p className="period">2023.10 - 현재</p>
+              <p>
+                거래소 페이지의 유지보수, 리뉴얼 작업과 하이브리드앱 개발을
+                담당하고 있습니다.
+              </p>
+              <p>
+                Skill Keywords: Next.js, JavaScript, Flutter, mobx,
+                Styled-Components
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <span className="projectName">| UZNEX APP</span>
+                <span className="period">2024.01 - 2024.02</span>
+              </p>
+
+              <p>
+                - flutter를 이용한 하이브리드앱 개발 및 출시(안드로이드 출시
+                완료 / ios 심사 대기중)
+              </p>
+              <p>- FCM 및 AWS SNS를 사용해 푸시알림 기능 개발</p>
+              <p>- 웹앱 통신을 통한 디바이스 정보 저장</p>
+            </div>
+            <div>
+              <p>
+                <span className="projectName">| UZNEX WEB</span>
+                <span className="period">2023.10 - 현재</span>
+              </p>
+              <p>- 유지보수 및 신규 개발 진행</p>
+              <p>- 전체 UI/UX 및 렌더링 속도 개선</p>
+              <p>- 레거시 코드 개선 및 불필요한 로직 삭제를 통한 코드 최적화</p>
+              <p>
+                - git flow 전략 적용을 통한 개발 주기 관리 및 안정적인 배포 환경
+                조성
+              </p>
+              <p>- eslint 및 prettier 설정으로 개발자 간 conflict 방지</p>
+              <p>
+                - 프론트엔드 협업 가이드 작성(git branch 전략 수립, 코드컨벤션
+                정의 등)
+              </p>
+              <p>
+                - FE 서버 용량 관리(crontab 및 logrotate 설정으로 차지하는 용량
+                4% 감소)
+              </p>
+              <p>- Next.js9에서 Next.js13으로 마이그레이션 진행중</p>
+            </div>
+          </DescriptionBox>
+        </CareerBox>
         <CareerBox>
           <ImageContainer>
             <Image src={AnvilLogo} className="logoImage" />
@@ -19,7 +77,7 @@ export const Experiences = () => {
               <p className="companyName">(주)엔빌</p>
               <p className="period">2023.01 - 2023.07</p>
               <p>
-                E-Commerce , CMS, 기업사이트 등의 프론트엔드 개발과 유지보수를
+                E-Commerce , Admin, 기업사이트 등의 프론트엔드 개발과 유지보수를
                 담당했습니다.
               </p>
               <p>
@@ -46,7 +104,7 @@ export const Experiences = () => {
             </div>
             <div>
               <p>
-                <span className="projectName">| HLI 통합관리시스템(CMS)</span>
+                <span className="projectName">| HLI 통합관리시스템(Admin)</span>
                 <span className="period">2023.01 - 2023.07</span>
               </p>
               <p>- 프론트엔드 화면 개발 및 유지보수를 담당</p>
