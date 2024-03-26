@@ -149,7 +149,10 @@ export const Experiences = () => {
             <div className="introduction">
               <p className="companyName">벳플럭스(Vetflux)</p>
               <p className="period">2022.07 - 2022.08 (Internship Program)</p>
-              <p>반려동물과 수의사를 연결시켜주는 서비스를 개발합니다.</p>
+              <p>
+                반려동물과 수의사를 연결시켜주는 서비스 중 한 페이지의 기획과
+                개발을 담당하였습니다.
+              </p>
               <p>Skill Keywords: Next.js, TypeScript, TailwindCss, Firebase</p>
             </div>
             <div>
@@ -157,13 +160,10 @@ export const Experiences = () => {
                 <span className="projectName">| 늘펫 PLUS</span>
                 <span className="period">2022.07 - 2022.08</span>
               </p>
-              <p>- 예약페이지를 기획하고 개발하는데 참여하였습니다.</p>
-              <p>
-                - Firebase를 활용하여 데이터 구조를 분석하고 모델링하는 작업을
-                수행했습니다.
-              </p>
-              <p>- day.js를 활용하여 직관적인 캘린더 기능을 구현했습니다.</p>
-              <p>- 예약 조회 및 등록 기능을 개발하였습니다.</p>
+              <p>- 예약페이지 기획 및 개발</p>
+              <p>- Firebase를 활용한 데이터 구조 분석 및 모델링 작업 수행</p>
+              <p>- day.js를 활용하여 직관적인 캘린더 기능 구현</p>
+              <p>- 예약 조회 및 등록 기능을 개발</p>
             </div>
           </DescriptionBox>
         </CareerBox>
