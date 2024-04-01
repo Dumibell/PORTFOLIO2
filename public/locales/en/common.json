@@ -1,0 +1,51 @@
+{
+  "about": {
+    "description1": "The reason I chose the profession of a developer \n is because it is something I am good at and passionate about.",
+    "description2": "My goal is not just to develop the given functionalities, but to collaborate \n and brainstorm with clients on services/features they actually need.",
+    "description3": " Having worked at the hotel front desk, \n I have honed my communication skills by interacting with diverse customers. \n Additionally, since all tasks were carried out as a team, \n I understand the importance of communication and collaboration among team members."
+  },
+  "skills": {
+    "nextjs": "I understand the concept of Server-Side Rendering (SSR), which involves rendering pages on the server to improve initial loading speed and SEO. This means that the server sends fully rendered HTML pages to the client, reducing the client-side rendering workload and allowing search engines to easily crawl and index the content.",
+    "typescript": "I use it to enhance the security and readability of the code."
+  },
+  "experience": {
+    "kobea": {
+      "companyName": "KOBEA GROUP",
+      "term": "2023.10 ~ present",
+      "introduce": "Maintaining and renovating exchange pages, as well as developing hybrid applications.",
+      "uznexapp": {
+        "description1": "Developed and launched hybrid applications using Flutter, with successful deployment on Android and pending review for iOS release.",
+        "description2": "Developed push notification functionality utilizing FCM and AWS SNS.",
+        "description3": "Storing device information via web app communication."
+      },
+      "uznexWeb": {
+        "description1": "Continuing maintenance and undertaking new development initiatives.",
+        "description2": "Enhancing overall UI/UX and optimizing rendering speed.",
+        "description3": "Optimizing code through legacy code improvement and removal of unnecessary logic.",
+        "description4": "Establishing a stable deployment environment and managing development cycles through the implementation of Git flow strategy.",
+        "description5": "Preventing conflicts among developers through eslint and prettier configurations.",
+        "description6": "Creating a frontend collaboration guide including establishing git branch strategies and defining code conventions.",
+        "description7": "Managing frontend server capacity by implementing crontab and logrotate configurations, resulting in a 4% reduction in occupied space.",
+        "description8": "Currently migrating from Next.js 9 to Next.js 13."
+      }
+    },
+    "anvil": {
+      "companyName": "ANVIL",
+      "introduce": "I was responsible for front-end development and maintenance of various projects including E-Commerce, Admin panels, and corporate websites.",
+      "hli": {
+        "projectName": "HLI Corporate Website",
+        "description1": "Developed main and various other pages and components.",
+        "description2": "Researched necessary libraries for animation effects and developed related functions to streamline development time.",
+        "description3": "Implementing global configuration for Google Fonts in Next.js 13 to enhance the overall code quality."
+      },
+      "hliAdmin": {
+        "projectName": "HLI Admin Site",
+        "description1": "Responsible for front-end screen development and maintenance.",
+        "description2": "Cleaning up existing legacy backend code and migrating to Node.js."
+      },
+      "alacarte": {
+        "projectName": "Alacarte mall Website(E-Commerce)"
+      }
+    }
+  }
+}

@@ -4,8 +4,10 @@ import VetfluxLogo from "../public/images/vetflux-logo.jpeg";
 import Image from "next/image";
 import { color, mobile } from "../styles/theme";
 import KobeaLogo from "../public/images/kobea-logo.jpeg";
+import { useTranslation } from "next-i18next";
 
 export const Experiences = () => {
+  const { t } = useTranslation();
   return (
     <Container id="3">
       <InnerContainer>
@@ -17,12 +19,9 @@ export const Experiences = () => {
           <Border />
           <DescriptionBox className="hasBottomPadding">
             <div className="introduction">
-              <p className="companyName">(주)코베아그룹</p>
-              <p className="period">2023.10 - 현재</p>
-              <p>
-                거래소 페이지의 유지보수, 리뉴얼 작업과 하이브리드앱 개발을
-                담당하고 있습니다.
-              </p>
+              <p className="companyName">{t("experience.kobea.companyName")}</p>
+              <p className="period">{t("experience.kobea.term")}</p>
+              <p>{t("experience.kobea.introduce")}</p>
               <p>
                 Skill Keywords: Next.js, JavaScript, Flutter, mobx,
                 Styled-Components
@@ -35,35 +34,23 @@ export const Experiences = () => {
                 <span className="period">2024.01 - 2024.02</span>
               </p>
 
-              <p>
-                - flutter를 이용한 하이브리드앱 개발 및 출시(안드로이드 출시
-                완료 / ios 심사 대기중)
-              </p>
-              <p>- FCM 및 AWS SNS를 사용해 푸시알림 기능 개발</p>
-              <p>- 웹앱 통신을 통한 디바이스 정보 저장</p>
+              <p>- {t("experience.kobea.uznexapp.description1")}</p>
+              <p>- {t("experience.kobea.uznexapp.description2")}</p>
+              <p>- {t("experience.kobea.uznexapp.description3")}</p>
             </div>
             <div>
               <p>
                 <span className="projectName">| UZNEX WEB</span>
-                <span className="period">2023.10 - 현재</span>
+                <span className="period">{t("experience.kobea.term")}</span>
               </p>
-              <p>- 유지보수 및 신규 개발 진행</p>
-              <p>- 전체 UI/UX 및 렌더링 속도 개선</p>
-              <p>- 레거시 코드 개선 및 불필요한 로직 삭제를 통한 코드 최적화</p>
-              <p>
-                - git flow 전략 적용을 통한 개발 주기 관리 및 안정적인 배포 환경
-                조성
-              </p>
-              <p>- eslint 및 prettier 설정으로 개발자 간 conflict 방지</p>
-              <p>
-                - 프론트엔드 협업 가이드 작성(git branch 전략 수립, 코드컨벤션
-                정의 등)
-              </p>
-              <p>
-                - FE 서버 용량 관리(crontab 및 logrotate 설정으로 차지하는 용량
-                4% 감소)
-              </p>
-              <p>- Next.js9에서 Next.js13으로 마이그레이션 진행중</p>
+              <p>- {t("experience.kobea.uznexWeb.description1")}</p>
+              <p>- {t("experience.kobea.uznexWeb.description2")}</p>
+              <p>- {t("experience.kobea.uznexWeb.description3")}</p>
+              <p>- {t("experience.kobea.uznexWeb.description4")}</p>
+              <p>- {t("experience.kobea.uznexWeb.description5")}</p>
+              <p>- {t("experience.kobea.uznexWeb.description6")}</p>
+              <p>- {t("experience.kobea.uznexWeb.description7")}</p>
+              <p>- {t("experience.kobea.uznexWeb.description8")}</p>
             </div>
           </DescriptionBox>
         </CareerBox>
@@ -74,12 +61,9 @@ export const Experiences = () => {
           <Border />
           <DescriptionBox className="hasBottomPadding">
             <div className="introduction">
-              <p className="companyName">(주)엔빌</p>
+              <p className="companyName">{t("experience.anvil.companyName")}</p>
               <p className="period">2023.01 - 2023.07</p>
-              <p>
-                E-Commerce , Admin, 기업사이트 등의 프론트엔드 개발과 유지보수를
-                담당했습니다.
-              </p>
+              <p>{t("experience.anvil.introduce")}</p>
               <p>
                 Skill Keywords: Next.js, TypeScript, Recoil, React-Query,
                 Styled-Components
@@ -88,34 +72,31 @@ export const Experiences = () => {
 
             <div>
               <p>
-                <span className="projectName">| HLI 기업사이트</span>
+                <span className="projectName">
+                  | {t("experience.anvil.hli.projectName")}
+                </span>
                 <span className="period">2023.04 - 2023.06</span>
               </p>
 
-              <p>- 메인 및 기타 다양한 페이지와 컴포넌트를 개발</p>
-              <p>
-                - 애니메이션 효과를 위해 필요한 라이브러리 조사와 관련 함수를
-                개발하여 개발 시간을 단축
-              </p>
-              <p>
-                - nextjs 13에서 사용되는 Google 폰트 전역 설정으로 전체 코드의
-                품질을 개선
-              </p>
+              <p>- {t("experience.anvil.hli.description1")}</p>
+              <p>- {t("experience.anvil.hli.description2")}</p>
+              <p>- {t("experience.anvil.hli.description3")}</p>
             </div>
             <div>
               <p>
-                <span className="projectName">| HLI 통합관리시스템(Admin)</span>
+                <span className="projectName">
+                  | {t("experience.anvil.hliAdmin.projectName")}
+                </span>
                 <span className="period">2023.01 - 2023.07</span>
               </p>
-              <p>- 프론트엔드 화면 개발 및 유지보수를 담당</p>
-              <p>
-                - 기존 백엔드 레거시 코드를 정리하고 Node.js로 마이그레이션 작업
-                진행
-              </p>
+              <p>- {t("experience.anvil.hliAdmin.description1")}</p>
+              <p>- {t("experience.anvil.hliAdmin.description2")}</p>
             </div>
             <div>
               <p>
-                <span className="projectName">| 알라카르테몰(E-Commerce)</span>
+                <span className="projectName">
+                  | {t("experience.anvil.alacarte.projectName")}
+                </span>
                 <span className="period">2023.01 - 2023.03</span>
               </p>
               <p>- 메인 및 기타 다양한 페이지와 컴포넌트를 개발</p>

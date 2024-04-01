@@ -1,0 +1,46 @@
+{
+  "about": {
+    "description1": "개발자라는 직업을 선택한 이유는 \n 제가 잘할 수 있는 일이자 좋아하는 일이기 때문입니다.",
+    "description2": "단순히 주어진 기능만을 개발하는 것이 아닌, 고객에게 실제로 필요한 \n 서비스/기능에 대해 함께 고민하고 개발하는 것을 목표로 합니다.",
+    "description3": "호텔 프론트데스크에서 다양한 고객을 응대하며 \n  커뮤니케이션 능력을 길렀으며, 모든 업무를 팀단위로 진행했기 때문에 \n 팀원 간의 소통과 협업의 중요성에 대해 잘 알고 있습니다."
+  },
+  "skills": {},
+  "experience": {
+    "kobea": {
+      "companyName": "(주) 코베아그룹",
+      "term": "2023.10 ~ 현재",
+      "introduce": "거래소 페이지의 유지보수, 리뉴얼 작업과 하이브리드앱 개발을 담당하고 있습니다.",
+      "uznexapp": {
+        "description1": "flutter를 이용한 하이브리드앱 개발 및 출시(안드로이드 출시 완료 / ios 심사 대기중)",
+        "description2": "FCM 및 AWS SNS를 사용해 푸시알림 기능 개발",
+        "description3": "웹앱 통신을 통한 디바이스 정보 저장"
+      },
+      "uznexWeb": {
+        "description1": "유지보수 및 신규 개발 진행",
+        "description2": "전체 UI/UX 및 렌더링 속도 개선",
+        "description3": "레거시 코드 개선 및 불필요한 로직 삭제를 통한 코드 최적화",
+        "description4": "git flow 전략 적용을 통한 개발 주기 관리 및 안정적인 배포 환경 조성",
+        "description5": "eslint 및 prettier 설정으로 개발자 간 conflict 방지",
+        "description6": "프론트엔드 협업 가이드 작성(git branch 전략 수립, 코드컨벤션 정의 등)",
+        "description7": "FE 서버 용량 관리(crontab 및 logrotate 설정으로 차지하는 용량 4% 감소)",
+        "description8": "Next.js9에서 Next.js13으로 마이그레이션 진행중"
+      }
+    },
+    "anvil": {
+      "companyName": "(주) 엔빌",
+      "introduce": "E-Commerce , Admin, 기업사이트 등의 프론트엔드 개발과 유지보수를 담당했습니다.",
+      "hli": {
+        "projectName": "HLI 기업사이트",
+        "description1": "메인 및 기타 다양한 페이지와 컴포넌트를 개발",
+        "description2": "애니메이션 효과를 위해 필요한 라이브러리 조사와 관련 함수를 개발하여 개발 시간을 단축",
+        "description3": " nextjs 13에서 사용되는 Google 폰트 전역 설정으로 전체 코드의 품질을 개선"
+      },
+      "hliAdmin": {
+        "projectName": "HLI 통합관리시스템(Admin)",
+        "description1": "프론트엔드 화면 개발 및 유지보수 담당",
+        "description2": "기존 백엔드 레거시 코드를 정리하고 Node.js로 마이그레이션 작업 진행"
+      }
+    }
+  },
+  "test": "test test"
+}
