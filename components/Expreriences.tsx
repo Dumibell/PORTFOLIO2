@@ -99,25 +99,21 @@ export const Experiences = () => {
                 </span>
                 <span className="period">2023.01 - 2023.03</span>
               </p>
-              <p>- 메인 및 기타 다양한 페이지와 컴포넌트를 개발</p>
-              <p>
-                - wish list, 슬라이드 등 공통 컴포넌트를 개발 및 적용하여 전체
-                개발 시간을 단축
-              </p>
-              <p>
-                - SVG 사용에 관한 컨벤션을 정의하여 중복 파일과 코드를
-                최소화하는 작업을 수행
-              </p>
+              <p>- {t("experience.anvil.alacarte.description1")}</p>
+              <p>- {t("experience.anvil.alacarte.description2")}</p>
+              <p>- {t("experience.anvil.alacarte.description3")}</p>
             </div>
             <div>
               <p>
-                <span className="projectName">| 프로젝트 외 기타 업무</span>
+                <span className="projectName">
+                  | {t("experience.anvil.etc.projectName")}
+                </span>
                 <span className="period">2023.01 - 2023.07</span>
               </p>
-              <p>- 사업 제안서 작성 및 발표자료(PPT) 작업 수행</p>
-              <p>- 단위테스트 진행 보고서 작성</p>
-              <p>- 동료 개발자와 코드리뷰 진행</p>
-              <p>- 사내 기술 블로그 작성</p>
+              <p>- {t("experience.anvil.etc.description1")}</p>
+              <p>- {t("experience.anvil.etc.description2")}</p>
+              <p>- {t("experience.anvil.etc.description3")}</p>
+              <p>- {t("experience.anvil.etc.description4")}</p>
             </div>
           </DescriptionBox>
         </CareerBox>
@@ -128,23 +124,24 @@ export const Experiences = () => {
           <Border />
           <DescriptionBox>
             <div className="introduction">
-              <p className="companyName">벳플럭스(Vetflux)</p>
-              <p className="period">2022.07 - 2022.08 (Internship Program)</p>
-              <p>
-                반려동물과 수의사를 연결시켜주는 서비스 중 한 페이지의 기획과
-                개발을 담당하였습니다.
+              <p className="companyName">
+                {t("experience.vetflux.projectName")}
               </p>
+              <p className="period">2022.07 - 2022.08 (Internship Program)</p>
+              <p>{t("experience.vetflux.introduce")}</p>
               <p>Skill Keywords: Next.js, TypeScript, TailwindCss, Firebase</p>
             </div>
             <div>
               <p>
-                <span className="projectName">| 늘펫 PLUS</span>
+                <span className="projectName">
+                  | {t("experience.vetflux.neulpet.projectName")}
+                </span>
                 <span className="period">2022.07 - 2022.08</span>
               </p>
-              <p>- 예약페이지 기획 및 개발</p>
-              <p>- Firebase를 활용한 데이터 구조 분석 및 모델링 작업 수행</p>
-              <p>- day.js를 활용하여 직관적인 캘린더 기능 구현</p>
-              <p>- 예약 조회 및 등록 기능을 개발</p>
+              <p>- {t("experience.vetflux.neulpet.description1")}</p>
+              <p>- {t("experience.vetflux.neulpet.description2")}</p>
+              <p>- {t("experience.vetflux.neulpet.description3")}</p>
+              <p>- {t("experience.vetflux.neulpet.description4")}</p>
             </div>
           </DescriptionBox>
         </CareerBox>

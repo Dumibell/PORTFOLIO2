@@ -39,6 +39,31 @@
         "projectName": "HLI 통합관리시스템(Admin)",
         "description1": "프론트엔드 화면 개발 및 유지보수 담당",
         "description2": "기존 백엔드 레거시 코드를 정리하고 Node.js로 마이그레이션 작업 진행"
+      },
+      "alacarte": {
+        "projectName": "알라카르테몰(E-Commerce)",
+        "description1": "메인 및 기타 다양한 페이지와 컴포넌트를 개발",
+        "description2": "wish list, 슬라이드 등 공통 컴포넌트를 개발 및 적용하여 전체 개발 시간 단축",
+        "description3": "SVG 사용에 관한 컨벤션을 정의하여 중복 파일과 코드를  최소화하는 작업을 수행"
+      },
+
+      "etc": {
+        "projectName": "프로젝트 외 기타 업무",
+        "description1": "사업 제안서 작성 및 발표자료(PPT) 작업 수행",
+        "description2": "단위테스트 진행 및 보고서 작성",
+        "description3": "동료 개발자와 코드리뷰 진행",
+        "description4": "사내 기술 블로그 작성"
+      }
+    },
+    "vetflux": {
+      "projectName": "벳플럭스",
+      "introduce": " 반려동물과 수의사를 연결시켜주는 서비스 중 한 페이지의 기획과 개발을 담당하였습니다.",
+      "neulpet": {
+        "projectName": "늘펫 PLUS",
+        "description1": "예약페이지 기획 및 개발",
+        "description2": "Firebase를 활용한 데이터 구조 분석 및 모델링 작업 수행",
+        "description3": "day.js를 활용하여 직관적인 캘린더 기능 구현",
+        "description4": "예약 조회 및 등록 기능을 개발"
       }
     }
   },
