@@ -18,12 +18,13 @@ export const About = () => {
           <ImageContainer>
             <Image
               src={mainImage}
-              width={500}
-              height={300}
+              width={550}
+              height={360}
               alt="프로필이미지"
               priority
               className="profileImage"
               placeholder="blur"
+              objectFit="cover"
             />
           </ImageContainer>
           <Description>
