@@ -122,14 +122,13 @@ export const Projects = () => {
                       </p>
                     </div>
                     <div>
-                      s
                       {list.website && (
                         <p
                           className="click"
                           onClick={() => window.open(list.website || "")}
                         >
                           <FontAwesomeIcon icon={faGlobe} className="icon" />
-                          Website 바로가기
+                          {t("projects.website")}
                         </p>
                       )}
                       {list.github && (
@@ -138,7 +137,7 @@ export const Projects = () => {
                           onClick={() => window.open(list.github || "")}
                         >
                           <FontAwesomeIcon icon={faGithub} className="icon" />
-                          Github Repository 바로가기
+                          {t("projects.github")}
                         </p>
                       )}
                     </div>
