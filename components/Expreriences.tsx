@@ -14,7 +14,7 @@ export const Experiences = () => {
         <SectionTitle>WORK EXPERIENCE</SectionTitle>
         <CareerBox>
           <ImageContainer>
-            <Image src={KobeaLogo} className="logoImage" />
+            <Image src={KobeaLogo} className="logoImage" placeholder="blur" />
           </ImageContainer>
           <Border />
           <DescriptionBox className="hasBottomPadding">
@@ -56,7 +56,7 @@ export const Experiences = () => {
         </CareerBox>
         <CareerBox>
           <ImageContainer>
-            <Image src={AnvilLogo} className="logoImage" />
+            <Image src={AnvilLogo} className="logoImage" placeholder="blur" />
           </ImageContainer>
           <Border />
           <DescriptionBox className="hasBottomPadding">

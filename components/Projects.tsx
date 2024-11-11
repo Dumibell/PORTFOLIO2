@@ -108,7 +108,7 @@ export const Projects = () => {
             return (
               <Box key={list.id}>
                 <video autoPlay loop muted playsInline>
-                  <source src={`/videos/${list.src}`} />
+                  <source src={`/videos/${list.src}`} placeholder="blur" />
                 </video>
                 <Cover className="cover">
                   <InnerBox>
