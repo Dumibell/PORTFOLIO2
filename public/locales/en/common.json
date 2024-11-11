@@ -6,12 +6,14 @@
   },
   "skills": {
     "nextjs": "I understand the concept of Server-Side Rendering (SSR), which involves rendering pages on the server to improve initial loading speed and SEO. This means that the server sends fully rendered HTML pages to the client, reducing the client-side rendering workload and allowing search engines to easily crawl and index the content.",
-    "typescript": "I use it to enhance the security and readability of the code."
+    "typescript": "I use it to enhance the security and readability of the code.",
+    "react": "Through multiple project experiences, I can understand and properly utilize state management and component structure.",
+    "javascript": "I continuously learn while understanding the working principles."
   },
   "experience": {
     "kobea": {
       "companyName": "KOBEA GROUP",
-      "term": "2023.10 ~ present",
+      "term": "2023.10 ~ 2024.05",
       "introduce": "Maintaining and renovating exchange pages, as well as developing hybrid applications.",
       "uznexapp": {
         "description1": "Developed and launched hybrid applications using Flutter, with successful deployment on Android and pending review for iOS release.",
@@ -68,5 +70,15 @@
         "description4": "Developed reservation lookup and registration functionality."
       }
     }
+  },
+  "projects": {
+    "period": "Project Duration",
+    "teamSize": "Team Size",
+    "healthPrice": "Health Price",
+    "localPrice": "Local Price",
+    "hobbyloop": "Hobby Loop",
+    "hli": "HLI Corporate Website",
+    "alacarteMall": "Alacarte Mall",
+    "neulpet": "Neulpet PLUS"
   }
 }
