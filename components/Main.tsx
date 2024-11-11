@@ -9,7 +9,7 @@ export const Main = () => {
   return (
     <MainContainer>
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Experiences />
       <Projects />
       <Contacts />
