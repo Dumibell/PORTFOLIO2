@@ -2,8 +2,11 @@ import Image from "next/image";
 import mainImage from "../public/images/profile_img.jpeg";
 import { styled, keyframes } from "styled-components";
 import { mobile, tablet } from "../styles/theme";
+import { useTranslation } from "next-i18next";
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <Container id="1" className="font-Roboto">
       <InnerContainer>
@@ -15,38 +18,21 @@ export const About = () => {
           <ImageContainer>
             <Image
               src={mainImage}
-              width={500}
-              height={300}
+              width={550}
+              height={360}
               alt="프로필이미지"
               priority
               className="profileImage"
               placeholder="blur"
+              objectFit="cover"
             />
           </ImageContainer>
           <Description>
-            <p>
-              개발자라는 직업을 선택한 이유는
-              <br /> 제가 잘할 수 있는 일이자 좋아하는 일이기 때문입니다. <br />
-            </p>
+            <p>{t("about.description1")}</p>
             <br />
-            <p>
-              단순히 주어진 기능만을 개발하는 것이 아닌,
-              <strong>
-                고객에게 실제로 필요한
-                <br />
-                서비스/기능에 대해 함께 고민하고 개발
-              </strong>
-              하는 것을 목표로 합니다. <br />
-            </p>
+            <p>{t("about.description2")}</p>
             <br />
-            <p>
-              호텔 프론트데스크에서 다양한 고객을 응대하며
-              <br /> 커뮤니케이션 능력을 길렀으며, 모든 업무를 팀단위로 진행했기
-              때문에
-              <br />
-              <strong>팀원 간의 소통과 협업의 중요성</strong>에 대해 잘 알고
-              있습니다.
-            </p>
+            <p>{t("about.description1")}</p>
           </Description>
         </ImageAndDescription>
         <Name>
@@ -137,6 +123,10 @@ const Description = styled.div`
   text-align: end;
   font-weight: 300;
   font-size: 16px;
+
+  p {
+    white-space: pre-line;
+  }
 
   @media (max-width: ${tablet}) {
     font-size: 15px;

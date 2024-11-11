@@ -5,9 +5,14 @@ import { styled } from "styled-components";
 import { Nav } from "../components/Nav/Nav";
 import { useStore } from "../stores/store";
 import { darkTheme, lightTheme } from "../styles/theme";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetServerSideProps, GetStaticPropsContext } from "next";
+import { GetStaticProps } from "next";
+import { useTranslation } from "next-i18next";
 
 const Index: NextPage = () => {
   const { lightMode, changeMode } = useStore();
+
   return (
     <Container lightMode={lightMode}>
       <>
@@ -16,6 +21,15 @@ const Index: NextPage = () => {
       </>
     </Container>
   );
+};
+
+export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale as string, ["common"])),
+      locale,
+    },
+  };
 };
 
 const Container = styled.div<{ lightMode: boolean }>`

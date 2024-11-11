@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 interface ProjectListType {
   id: number;
@@ -17,66 +18,84 @@ interface ProjectListType {
 
 export const Projects = () => {
   const router = useRouter();
+  const { t } = useTranslation();
 
   const PROJECT_LIST: ProjectListType[] = [
     {
       id: 1,
-      title: "HLI 기업사이트",
+      title: t("projects.healthPrice"),
+      period: "2024.08 ~ 2024.09",
+      team: "FE 2, BE 1",
+      src: "healthprice.mov",
+      website: "https://healthprice.co.kr/",
+    },
+    {
+      id: 2,
+      title: t("projects.localPrice"),
+      period: "2024.05 ~ present",
+      team: "FE 1, BE 1",
+      src: "localprice.mov",
+      website: "https://app.localprice.co.kr/main",
+    },
+    {
+      id: 3,
+      title: t("projects.hobbyloop"),
+      period: "2024.03 ~ 2024.04",
+      team: "FE 4",
+      src: "hobbyloop.mov",
+      website: "https://hobbyloop.co.kr",
+    },
+    {
+      id: 4,
+      title: "UZNEX",
+      period: "2023.10 ~ 2024.04",
+      team: "FE 1, BE 1",
+      src: "uznex.mov",
+      website: "https://uznex.com/",
+    },
+    {
+      id: 5,
+      title: t("projects.hli"),
       period: "2023.04 ~ 2023.06",
-      team: "프론트엔드 4명, 백엔드 2명",
+      team: "FE 4, BE 2",
       src: "hlikorea_ver2.mp4",
       website: "https://www.hlikorea.com/",
     },
     {
-      id: 2,
-      title: "알라카르테몰",
+      id: 6,
+      title: t("projects.alacarteMall"),
       period: "2023.01 ~ 2023.03",
-      team: "프론트엔드 4명, 백엔드 2명",
+      team: "FE 4, BE 2",
       src: "alacarte_ver2.mp4",
       website: "https://www.alacartemall.com/",
     },
     {
-      id: 3,
-      title: "늘펫 PLUS",
+      id: 7,
+      title: t("projects.neulpet"),
       period: "2022.07 ~2022.08",
-      team: "프론트엔드 2명",
+      team: "FE 2",
       src: "vetflux.mov",
       website: "https://www.vetflux.net/",
       github: "https://github.com/Dumibell/reservation",
     },
     {
-      id: 4,
+      id: 8,
+      title: "Re:bit",
       src: "reading.mov",
       period: "2022.11 ~ 2022.11",
-      team: "단독 개발",
-      title: "Re:bit",
+      team: "FE 1",
+
       website: "https://dumibell.github.io/reading-project/#/",
       github: "https://github.com/Dumibell/reading-project",
     },
     {
-      id: 5,
+      id: 9,
       title: "ToDo List",
       period: "2022.10 ~ 2022.11",
-      team: "단독 개발",
+      team: "FE 1",
       src: "todo.mov",
       website: "https://dumibell.github.io/todolist/",
       github: "https://github.com/Dumibell/todolist",
-    },
-    {
-      id: 6,
-      title: "마이페이크트립",
-      period: "2022.07 ~ 2022.07",
-      team: "프론트엔드 4명, 백엔드 2명",
-      src: "my_fake_trip.mov",
-      github: "https://github.com/Dumibell/34-2nd-Fake-Trip-frontend",
-    },
-    {
-      id: 7,
-      title: "Wesop",
-      period: "2022.06 ~ 2022.07",
-      team: "프론트엔드 4명, 백엔드 1명",
-      src: "wesop.mov",
-      github: "https://github.com/Dumibell/34-1st-Wesop-frontend",
     },
   ];
 
@@ -95,8 +114,12 @@ export const Projects = () => {
                   <InnerBox>
                     <p className="title">{list.title}</p>
                     <div>
-                      <p>개발 기간: {list.period}</p>
-                      <p>개발 인원: {list.team}</p>
+                      <p>
+                        {t("projects.period")}: {list.period}
+                      </p>
+                      <p>
+                        {t("projects.teamSize")}: {list.team}
+                      </p>
                     </div>
                     <div>
                       {list.website && (
@@ -105,7 +128,7 @@ export const Projects = () => {
                           onClick={() => window.open(list.website || "")}
                         >
                           <FontAwesomeIcon icon={faGlobe} className="icon" />
-                          Website 바로가기
+                          {t("projects.website")}
                         </p>
                       )}
                       {list.github && (
@@ -114,7 +137,7 @@ export const Projects = () => {
                           onClick={() => window.open(list.github || "")}
                         >
                           <FontAwesomeIcon icon={faGithub} className="icon" />
-                          Github Repository 바로가기
+                          {t("projects.github")}
                         </p>
                       )}
                     </div>
@@ -191,7 +214,7 @@ const Box = styled.div`
     width: 400px;
     height: 250px;
     object-fit: cover;
-    border: 5px solid ${color.gray.ligthslate};
+    /* border: 5px solid ${color.gray.ligthslate}; */
   }
 `;
 

@@ -1,0 +1,86 @@
+{
+  "about": {
+    "description1": "The reason I chose the profession of a developer \n is because it is something I am good at and passionate about.",
+    "description2": "My goal is not just to develop the given functionalities, but to collaborate \n and brainstorm with clients on services/features they actually need.",
+    "description3": " Having worked at the hotel front desk, \n I have honed my communication skills by interacting with diverse customers. \n Additionally, since all tasks were carried out as a team, \n I understand the importance of communication and collaboration among team members."
+  },
+  "skills": {
+    "nextjs": "I understand the concept of Server-Side Rendering (SSR), which involves rendering pages on the server to improve initial loading speed and SEO. This means that the server sends fully rendered HTML pages to the client, reducing the client-side rendering workload and allowing search engines to easily crawl and index the content.",
+    "typescript": "I use it to enhance the security and readability of the code.",
+    "react": "Through multiple project experiences, I can understand and properly utilize state management and component structure.",
+    "javascript": "I continuously learn while understanding the working principles."
+  },
+  "experience": {
+    "kobea": {
+      "companyName": "KOBEA GROUP",
+      "term": "2023.10 ~ 2024.05",
+      "introduce": "Maintaining and renovating exchange pages, as well as developing hybrid applications.",
+      "uznexapp": {
+        "description1": "Developed and launched hybrid applications using Flutter, with successful deployment on Android and pending review for iOS release.",
+        "description2": "Developed push notification functionality utilizing FCM and AWS SNS.",
+        "description3": "Storing device information via web app communication."
+      },
+      "uznexWeb": {
+        "description1": "Continuing maintenance and undertaking new development initiatives.",
+        "description2": "Enhancing overall UI/UX and optimizing rendering speed.",
+        "description3": "Optimizing code through legacy code improvement and removal of unnecessary logic.",
+        "description4": "Establishing a stable deployment environment and managing development cycles through the implementation of Git flow strategy.",
+        "description5": "Preventing conflicts among developers through eslint and prettier configurations.",
+        "description6": "Creating a frontend collaboration guide including establishing git branch strategies and defining code conventions.",
+        "description7": "Managing frontend server capacity by implementing crontab and logrotate configurations, resulting in a 4% reduction in occupied space.",
+        "description8": "Currently migrating from Next.js 9 to Next.js 13."
+      }
+    },
+    "anvil": {
+      "companyName": "ANVIL",
+      "introduce": "I was responsible for front-end development and maintenance of various projects including E-Commerce, Admin panels, and corporate websites.",
+      "hli": {
+        "projectName": "HLI Corporate Website",
+        "description1": "Developed main and various other pages and components.",
+        "description2": "Researched necessary libraries for animation effects and developed related functions to streamline development time.",
+        "description3": "Implementing global configuration for Google Fonts in Next.js 13 to enhance the overall code quality."
+      },
+      "hliAdmin": {
+        "projectName": "HLI Admin Site",
+        "description1": "Responsible for front-end screen development and maintenance.",
+        "description2": "Cleaning up existing legacy backend code and migrating to Node.js."
+      },
+      "alacarte": {
+        "projectName": "Alacarte mall Website(E-Commerce)",
+        "description1": "Developed main and various other pages and components.",
+        "description2": "Developed and implemented common components such as wish list, sliders, etc., to shorten the overall development time.",
+        "description3": "Defined conventions for SVG usage to minimize duplicate files and code, thereby reducing redundancy."
+      },
+      "etc": {
+        "projectName": "Other tasks outside the projects",
+        "description1": "Performed tasks related to writing business proposals and creating presentation materials (PPT).",
+        "description2": "Performed unit testing and wrote a report documenting the progress.",
+        "description3": "Conducted code reviews with fellow developers.",
+        "description4": "Authored posts for the internal technical blog."
+      }
+    },
+    "vetflux": {
+      "projectName": "VETFLUX",
+      "introduce": "Planning and developing a page for a service that connects pet owners with veterinarians.",
+      "neulpet": {
+        "projectName": "Neulpet PLUS",
+        "description1": "Planning and developing a reservation page",
+        "description2": "Performed data structure analysis and modeling using Firebase.",
+        "description3": "Implemented intuitive calendar functionality using day.js.",
+        "description4": "Developed reservation lookup and registration functionality."
+      }
+    }
+  },
+  "projects": {
+    "period": "Project Duration",
+    "teamSize": "Team Size",
+    "healthPrice": "Health Price",
+    "localPrice": "Local Price",
+    "hobbyloop": "Hobby Loop",
+    "hli": "HLI Corporate Website",
+    "alacarteMall": "Alacarte Mall",
+    "neulpet": "Neulpet PLUS",
+    "website": "Go to Website",
+    "github": "Go to Github Repository"
+  }
+}
