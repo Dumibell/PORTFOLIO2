@@ -9,6 +9,7 @@ import { SideMenu } from "./SideMenu";
 import { color, mobile } from "../../styles/theme";
 import { useSelector } from "react-redux";
 import { useStore } from "../../stores/store";
+import { useRouter } from "next/router";
 
 export interface NavListType {
   id: number;
@@ -18,7 +19,7 @@ export interface NavListType {
 
 export const NAV_LIST: NavListType[] = [
   { id: 1, name: "ABOUT", offset: "1" },
-  { id: 2, name: "SKILLS", offset: "2" },
+  // { id: 2, name: "SKILLS", offset: "2" },
   { id: 3, name: "EXPERIENCES", offset: "3" },
   { id: 4, name: "PROJECTS", offset: "4" },
   { id: 5, name: "CONTACTS", offset: "5" },
@@ -27,8 +28,18 @@ export const NAV_LIST: NavListType[] = [
 export const Nav = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
   const { lightMode, changeMode } = useStore();
+  const router = useRouter();
+  const { pathname, asPath, query } = router;
 
   const contactsInView = useSelector((state: boolean) => state);
+
+  /** locale 변경 */
+  const toggleLanguage = (locale: string) => {
+    router.push({ pathname, query }, asPath, {
+      locale,
+      scroll: false,
+    });
+  };
 
   return (
     <NavContainer className={contactsInView ? "black" : ""}>
@@ -49,13 +60,27 @@ export const Nav = () => {
           );
         })}
       </div>
-      {!contactsInView && (
-        <FontAwesomeIcon
-          icon={lightMode ? faMoon : faSun}
-          className="icon"
-          onClick={changeMode}
-        />
-      )}
+
+      <SwitchContainer>
+        <div className="localeWrapper">
+          <button className="localeBtn" onClick={() => toggleLanguage("en")}>
+            EN
+          </button>
+          <span>|</span>
+          <button className="localeBtn" onClick={() => toggleLanguage("ko")}>
+            KO
+          </button>
+        </div>
+        {!contactsInView && (
+          <button onClick={changeMode} className="iconBtn">
+            <FontAwesomeIcon
+              icon={lightMode ? faMoon : faSun}
+              className="icon"
+            />
+          </button>
+        )}
+      </SwitchContainer>
+
       <button className="mo">
         <FontAwesomeIcon
           icon={faBars}
@@ -76,13 +101,6 @@ const NavContainer = styled.ul`
   width: 100%;
   z-index: 10;
 
-  .icon {
-    position: absolute;
-    width: 20px;
-    top: 25px;
-    right: 40px;
-  }
-
   &.black {
     background-color: black;
     color: white;
@@ -94,21 +112,15 @@ const NavContainer = styled.ul`
 
   .pc {
     display: flex;
-    width: 80%;
+    width: 75%;
     height: 100%;
     justify-content: space-between;
     align-items: center;
   }
 
-  /* 600px 미만일 때 */
   @media (max-width: ${mobile}) {
     .pc {
       display: none;
-    }
-
-    .icon {
-      width: 25px;
-      right: 80px;
     }
 
     .mo {
@@ -140,3 +152,36 @@ const List = styled.li`
     }
   }
 `;
+
+const SwitchContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  top: 0px;
+  right: 20px;
+  position: absolute;
+  height: 80px;
+
+  .localeWrapper {
+    display: flex;
+    gap: 5px;
+
+    .localeBtn:hover {
+      font-weight: 600;
+    }
+  }
+
+  .iconBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+  }
+
+  @media (max-width: ${mobile}) {
+    right: 80px;
+  }
+`;
+
+export default Nav;
