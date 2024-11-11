@@ -1,86 +1,86 @@
 {
   "about": {
-    "description1": "The reason I chose the profession of a developer \n is because it is something I am good at and passionate about.",
-    "description2": "My goal is not just to develop the given functionalities, but to collaborate \n and brainstorm with clients on services/features they actually need.",
-    "description3": " Having worked at the hotel front desk, \n I have honed my communication skills by interacting with diverse customers. \n Additionally, since all tasks were carried out as a team, \n I understand the importance of communication and collaboration among team members."
+    "description1": "Frontend developer focused on delivering real value through code.",
+    "description2": "Committed to developing solutions that prioritize user experience \n and business value beyond basic implementation.",
+    "description3": "Leveraging strong communication skills and teamwork acquired through \n hotel front desk experience to facilitate effective collaboration."
   },
   "skills": {
-    "nextjs": "I understand the concept of Server-Side Rendering (SSR), which involves rendering pages on the server to improve initial loading speed and SEO. This means that the server sends fully rendered HTML pages to the client, reducing the client-side rendering workload and allowing search engines to easily crawl and index the content.",
-    "typescript": "I use it to enhance the security and readability of the code.",
-    "react": "Through multiple project experiences, I can understand and properly utilize state management and component structure.",
-    "javascript": "I continuously learn while understanding the working principles."
+    "nextjs": "Build efficient web applications with deep understanding of SSR and SEO optimization.",
+    "typescript": "Actively utilize for type safety and code quality improvement.",
+    "react": "Develop scalable applications based on solid understanding of component design and state management.",
+    "javascript": "Understand core JavaScript principles and apply latest trends to practical development."
   },
   "experience": {
     "kobea": {
-      "companyName": "KOBEA GROUP",
+      "companyName": "Kobea Group",
       "term": "2023.10 ~ 2024.05",
-      "introduce": "Maintaining and renovating exchange pages, as well as developing hybrid applications.",
+      "introduce": "Responsible for frontend development and performance optimization of exchange web/app services.",
       "uznexapp": {
-        "description1": "Developed and launched hybrid applications using Flutter, with successful deployment on Android and pending review for iOS release.",
-        "description2": "Developed push notification functionality utilizing FCM and AWS SNS.",
-        "description3": "Storing device information via web app communication."
+        "description1": "Developed and launched Flutter-based hybrid application",
+        "description2": "Built push notification system using FCM and AWS SNS",
+        "description3": "Implemented web-app communication system and device information management"
       },
       "uznexWeb": {
-        "description1": "Continuing maintenance and undertaking new development initiatives.",
-        "description2": "Enhancing overall UI/UX and optimizing rendering speed.",
-        "description3": "Optimizing code through legacy code improvement and removal of unnecessary logic.",
-        "description4": "Establishing a stable deployment environment and managing development cycles through the implementation of Git flow strategy.",
-        "description5": "Preventing conflicts among developers through eslint and prettier configurations.",
-        "description6": "Creating a frontend collaboration guide including establishing git branch strategies and defining code conventions.",
-        "description7": "Managing frontend server capacity by implementing crontab and logrotate configurations, resulting in a 4% reduction in occupied space.",
-        "description8": "Currently migrating from Next.js 9 to Next.js 13."
+        "description1": "Maintained and developed new features for exchange platform",
+        "description2": "Enhanced UI/UX and rendering performance through optimization",
+        "description3": "Refactored legacy code and optimized performance",
+        "description4": "Implemented Git-flow strategy and stabilized deployment process",
+        "description5": "Improved team productivity through code quality tools",
+        "description6": "Established and documented frontend development guidelines",
+        "description7": "Reduced operating costs through server resource optimization",
+        "description8": "Led Next.js 13 migration initiative"
       }
     },
     "anvil": {
-      "companyName": "ANVIL",
-      "introduce": "I was responsible for front-end development and maintenance of various projects including E-Commerce, Admin panels, and corporate websites.",
+      "companyName": "Anvil",
+      "introduce": "Led frontend development and performance optimization for various web services.",
       "hli": {
         "projectName": "HLI Corporate Website",
-        "description1": "Developed main and various other pages and components.",
-        "description2": "Researched necessary libraries for animation effects and developed related functions to streamline development time.",
-        "description3": "Implementing global configuration for Google Fonts in Next.js 13 to enhance the overall code quality."
+        "description1": "Developed responsive website UI/UX",
+        "description2": "Implemented performance-optimized animation components",
+        "description3": "Improved performance through global font system implementation"
       },
       "hliAdmin": {
-        "projectName": "HLI Admin Site",
-        "description1": "Responsible for front-end screen development and maintenance.",
-        "description2": "Cleaning up existing legacy backend code and migrating to Node.js."
+        "projectName": "HLI Integrated Management System",
+        "description1": "Developed and maintained admin dashboard",
+        "description2": "Designed and implemented backend migration"
       },
       "alacarte": {
-        "projectName": "Alacarte mall Website(E-Commerce)",
-        "description1": "Developed main and various other pages and components.",
-        "description2": "Developed and implemented common components such as wish list, sliders, etc., to shorten the overall development time.",
-        "description3": "Defined conventions for SVG usage to minimize duplicate files and code, thereby reducing redundancy."
+        "projectName": "AlacarteMall",
+        "description1": "Developed E-Commerce platform frontend",
+        "description2": "Built reusable component library",
+        "description3": "Established SVG optimization system and guidelines"
       },
       "etc": {
-        "projectName": "Other tasks outside the projects",
-        "description1": "Performed tasks related to writing business proposals and creating presentation materials (PPT).",
-        "description2": "Performed unit testing and wrote a report documenting the progress.",
-        "description3": "Conducted code reviews with fellow developers.",
-        "description4": "Authored posts for the internal technical blog."
+        "projectName": "Additional Responsibilities",
+        "description1": "Created and presented technical proposals",
+        "description2": "Designed and executed quality assurance tests",
+        "description3": "Established code review culture",
+        "description4": "Maintained technical blog"
       }
     },
     "vetflux": {
-      "projectName": "VETFLUX",
-      "introduce": "Planning and developing a page for a service that connects pet owners with veterinarians.",
+      "projectName": "Vetflux",
+      "introduce": "Designed and developed reservation system for pet healthcare service.",
       "neulpet": {
         "projectName": "Neulpet PLUS",
-        "description1": "Planning and developing a reservation page",
-        "description2": "Performed data structure analysis and modeling using Firebase.",
-        "description3": "Implemented intuitive calendar functionality using day.js.",
-        "description4": "Developed reservation lookup and registration functionality."
+        "description1": "Designed and implemented real-time booking system",
+        "description2": "Architected Firebase-based data structure",
+        "description3": "Developed intuitive reservation calendar system",
+        "description4": "Built appointment management system"
       }
     }
   },
   "projects": {
-    "period": "Project Duration",
+    "period": "Development Period",
     "teamSize": "Team Size",
     "healthPrice": "Health Price",
     "localPrice": "Local Price",
-    "hobbyloop": "Hobby Loop",
+    "hobbyloop": "Hobbyloop",
     "hli": "HLI Corporate Website",
-    "alacarteMall": "Alacarte Mall",
+    "alacarteMall": "AlacarteMall",
     "neulpet": "Neulpet PLUS",
-    "website": "Go to Website",
-    "github": "Go to Github Repository"
+    "website": "Visit Website",
+    "github": "View Github Repository"
   }
 }

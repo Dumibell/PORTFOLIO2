@@ -31,6 +31,8 @@ export const About = () => {
             <p>{t("about.description1")}</p>
             <br />
             <p>{t("about.description2")}</p>
+            <br />
+            <p>{t("about.description3")}</p>
           </Description>
         </ImageAndDescription>
         <Name>
