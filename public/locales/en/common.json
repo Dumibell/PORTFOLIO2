@@ -11,6 +11,32 @@
     "javascript": "Understand core JavaScript principles and apply latest trends to practical development."
   },
   "experience": {
+    "13hz": {
+      "companyName": "13 Hertz",
+      "term": "2024.05 ~ present",
+      "introduce": "Leading frontend development and maintenance of three major e-commerce services while driving technical excellence and process improvements as a Frontend Lead Developer",
+      "localPrice": {
+        "description1": "Automated manual deployment process by implementing timestamp-based event management system",
+        "description2": "Established marketing performance measurement framework through Google Analytics event tracking implementation",
+        "description3": "Integrated marketing tools including Meta Pixel and Naver Search Ads"
+      },
+      "localPriceRenewal": {
+        "description1": "Redesigned project architecture and standardized development processes",
+        "description2": "Introduced Git Flow and established code review processes",
+        "description3": "Improved component reusability by implementing Atomic Design pattern",
+        "description4": "Established and documented systematic code conventions"
+      },
+      "healthPrice": {
+        "description1": "Designed and implemented responsive web with SEO optimization",
+        "description2": "Provided device-optimized user experiences",
+        "description3": "Achieved successful service launch in September 2023"
+      },
+      "developmentImprovement": {
+        "description1": "Established Figma version control system and enhanced designer-developer collaboration process",
+        "description2": "Mentored junior developers and provided technical support",
+        "description3": "Optimized performance (reduced re-rendering, eliminated duplicate API calls)"
+      }
+    },
     "kobea": {
       "companyName": "Kobea Group",
       "term": "2023.10 ~ 2024.05",

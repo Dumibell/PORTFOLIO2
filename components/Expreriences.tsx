@@ -4,6 +4,7 @@ import VetfluxLogo from "../public/images/vetflux-logo.jpeg";
 import Image from "next/image";
 import { color, mobile } from "../styles/theme";
 import KobeaLogo from "../public/images/kobea-logo.jpeg";
+import LocalPriceLogo from "../public/images/localprice-logo.jpeg";
 import { useTranslation } from "next-i18next";
 
 export const Experiences = () => {
@@ -12,6 +13,72 @@ export const Experiences = () => {
     <Container id="3">
       <InnerContainer>
         <SectionTitle>WORK EXPERIENCE</SectionTitle>
+        <CareerBox>
+          <ImageContainer>
+            <Image
+              src={LocalPriceLogo}
+              className="logoImage"
+              placeholder="blur"
+            />
+          </ImageContainer>
+          <Border />
+          <DescriptionBox className="hasBottomPadding">
+            <div className="introduction">
+              <p className="companyName">{t("experience.13hz.companyName")}</p>
+              <p className="period">{t("experience.13hz.term")}</p>
+              <p>{t("experience.13hz.introduce")}</p>
+              <p>
+                Skill Keywords: Next.js, TypeScript, React Query, React Hook
+                Form, TailwindCss
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <span className="projectName">| Local Price</span>
+                <span className="period">2024.05 - present</span>
+              </p>
+
+              <p>- {t("experience.13hz.localPrice.description1")}</p>
+              <p>- {t("experience.13hz.localPrice.description2")}</p>
+              <p>- {t("experience.13hz.localPrice.description3")}</p>
+            </div>
+            <div>
+              <p>
+                <span className="projectName">| Local Price Renewal</span>
+                <span className="period">2024.05 - present</span>
+              </p>
+              <p>- {t("experience.13hz.localPriceRenewal.description1")}</p>
+              <p>- {t("experience.13hz.localPriceRenewal.description2")}</p>
+              <p>- {t("experience.13hz.localPriceRenewal.description3")}</p>
+              <p>- {t("experience.13hz.localPriceRenewal.description4")}</p>
+            </div>
+            <div>
+              <p>
+                <span className="projectName">| Health Price</span>
+                <span className="period">2024.08 - 2024.09</span>
+              </p>
+              <p>- {t("experience.13hz.healthPrice.description1")}</p>
+              <p>- {t("experience.13hz.healthPrice.description2")}</p>
+              <p>- {t("experience.13hz.healthPrice.description3")}</p>
+            </div>
+            <div>
+              <p>
+                <span className="projectName">| Development Improvement</span>
+                {/* <span className="period">2024.08 - 2024.09</span> */}
+              </p>
+              <p>
+                - {t("experience.13hz.developmentImprovement.description1")}
+              </p>
+              <p>
+                - {t("experience.13hz.developmentImprovement.description2")}
+              </p>
+              <p>
+                - {t("experience.13hz.developmentImprovement.description3")}
+              </p>
+            </div>
+          </DescriptionBox>
+        </CareerBox>
         <CareerBox>
           <ImageContainer>
             <Image src={KobeaLogo} className="logoImage" placeholder="blur" />
