@@ -265,11 +265,10 @@ const ImageContainer = styled.div`
   position: relative;
   max-width: 200px;
   height: 200px;
-  border: 1px solid ${color.gray.primary};
-  border-radius: 70%;
+  border-radius: 20%;
 
   .logoImage {
-    border-radius: 70%;
+    border-radius: 20%;
     opacity: 0.8;
   }
 
