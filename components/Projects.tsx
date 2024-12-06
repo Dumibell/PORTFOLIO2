@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 interface ProjectListType {
   id: number;
