@@ -12,7 +12,7 @@ const Index: NextPage = () => {
   const { lightMode, changeMode } = useStore();
 
   return (
-    <Container lightMode={lightMode}>
+    <Container $lightmode={lightMode}>
       <>
         <Nav />
         <Main />
@@ -30,12 +30,12 @@ export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
   };
 };
 
-const Container = styled.div<{ lightMode: boolean }>`
+const Container = styled.div<{ $lightmode: boolean }>`
   width: 100vw;
   background-color: ${(props) =>
-    props.lightMode ? lightTheme.background : darkTheme.background};
+    props.$lightmode ? lightTheme.background : darkTheme.background};
   color: ${(props) =>
-    props.lightMode ? lightTheme.textColor : darkTheme.textColor};
+    props.$lightmode ? lightTheme.textColor : darkTheme.textColor};
 `;
 
 export default Index;

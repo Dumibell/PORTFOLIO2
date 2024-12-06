@@ -13,7 +13,7 @@ interface SideMenuPropsType {
 export const SideMenu = ({ setSideMenuOpen }: SideMenuPropsType) => {
   const { lightMode } = useStore();
   return (
-    <Container lightMode={lightMode}>
+    <Container $lightmode={lightMode}>
       <button onClick={() => setSideMenuOpen(false)}>
         <FontAwesomeIcon icon={faXmark} className="xMark" />
       </button>
@@ -38,14 +38,14 @@ export const SideMenu = ({ setSideMenuOpen }: SideMenuPropsType) => {
   );
 };
 
-const Container = styled.div<{ lightMode: boolean }>`
+const Container = styled.div<{ $lightmode: boolean }>`
   position: fixed;
   padding: 30px;
   width: 100%;
   background-color: ${(props) =>
-    props.lightMode ? lightTheme.background : darkTheme.background};
+    props.$lightmode ? lightTheme.background : darkTheme.background};
   color: ${(props) =>
-    props.lightMode ? lightTheme.textColor : darkTheme.textColor};
+    props.$lightmode ? lightTheme.textColor : darkTheme.textColor};
   /* background-color: inherit; */
   height: 100vh;
   z-index: 100;
