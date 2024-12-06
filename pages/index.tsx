@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
 import { Main } from "../components/Main";
-import React from "react";
+import React, { Suspense } from "react";
 import { styled } from "styled-components";
 import { Nav } from "../components/Nav/Nav";
 import { useStore } from "../stores/store";
 import { darkTheme, lightTheme } from "../styles/theme";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { GetServerSideProps, GetStaticPropsContext } from "next";
-import { GetStaticProps } from "next";
-import { useTranslation } from "next-i18next";
+import { GetStaticPropsContext } from "next";
 
 const Index: NextPage = () => {
   const { lightMode, changeMode } = useStore();
