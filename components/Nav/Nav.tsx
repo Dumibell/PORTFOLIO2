@@ -29,7 +29,7 @@ export const Nav = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
   const { lightMode, changeMode } = useStore();
   const router = useRouter();
-  const { pathname, asPath, query } = router;
+  const { pathname, asPath, query, locale } = router;
 
   const contactsInView = useSelector((state: boolean) => state);
 
@@ -63,13 +63,19 @@ export const Nav = () => {
 
       <SwitchContainer>
         <div className="localeWrapper">
-          <button className="localeBtn" onClick={() => toggleLanguage("en")}>
+          <LocaleButton
+            onClick={() => toggleLanguage("en")}
+            selected={locale === "en"}
+          >
             EN
-          </button>
+          </LocaleButton>
           <span>|</span>
-          <button className="localeBtn" onClick={() => toggleLanguage("ko")}>
+          <LocaleButton
+            onClick={() => toggleLanguage("ko")}
+            selected={locale === "ko"}
+          >
             KO
-          </button>
+          </LocaleButton>
         </div>
         {!contactsInView && (
           <button onClick={changeMode} className="iconBtn">
@@ -165,10 +171,6 @@ const SwitchContainer = styled.div`
   .localeWrapper {
     display: flex;
     gap: 5px;
-
-    .localeBtn:hover {
-      font-weight: 600;
-    }
   }
 
   .iconBtn {
@@ -182,6 +184,13 @@ const SwitchContainer = styled.div`
   @media (max-width: ${mobile}) {
     right: 80px;
   }
+`;
+
+const LocaleButton = styled.button<{ selected: boolean }>`
+  &:hover {
+    font-weight: 600;
+  }
+  font-weight: ${(props) => props.selected && 600};
 `;
 
 export default Nav;
